@@ -7,3 +7,43 @@ section {
     height: 100vh;
     width: 100vw;
 }
+
+/*begin: departments*/
+.udaan-pop-heads {
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    /*background-position: top 0 left -30%;*/
+    background-repeat: no-repeat;
+}
+
+.events {
+    color: white;
+    font-size: 50px;
+}
+
+.event-text {
+    position: relative;
+    width: 380px;
+}
+
+.reveal-text {
+    position: relative;
+    top: -50px;
+    width: 380px;
+    height: 50px;
+    background: blue;
+    animation: reveal 1s;
+}
+
+@keyframes reveal {
+    0% {
+        width: 380px
+    }
+    100% {
+        width: 0
+    }
+}
+
+/*end:departments*/
