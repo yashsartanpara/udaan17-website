@@ -8,4 +8,15 @@ JQDoc.ready(function () {
         pagination: false,
         direction: "horizontal"
     });
+    var temp = document.getElementById('swipe-window');
+    var hammer = new Hammer.Manager(temp);
+    var swipe = new Hammer.Swipe();
+    hammer.add(swipe);
+    hammer.on('swipeleft', function (e) {
+        $(".main").moveDown();
+    });
+    hammer.on('swiperight', function (e) {
+        $(".main").moveUp();
+    });
+
 });
