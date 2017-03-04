@@ -1,49 +1,96 @@
 body {
-    margin: 0;
-    overflow-x: hidden;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 section {
-    height: 100vh;
-    width: 100vw;
+  height: 100vh;
+  width: 100vw;
 }
+
+/* begin: title page */
+#udaanText {
+  max-width: 45vw;
+  height: 40vh;
+  display: block;
+  margin: 0 auto;
+}
+
+#udaanLogo {
+  max-width: 40vw;
+  display: block;
+  margin: 0 auto;
+}
+
+#schedule {
+  float: left;
+  margin-left: 10vw;
+}
+
+#video {
+  float: right;
+  margin-right: 10vw;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.social-icon {
+  margin: 0 10px 0 10px;
+}
+
+/* end: title page */
 
 /*begin: departments*/
 .udaan-pop-heads {
-    z-index: -1;
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    /*background-position: top 0 left -30%;*/
-    background-repeat: no-repeat;
+  z-index: -1;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  /*background-position: top 0 left -30%;*/
+  background-repeat: no-repeat;
 }
 
 .events {
-    color: white;
-    font-size: 50px;
+  color: white;
+  font-size: 50px;
 }
 
 .event-text {
-    position: relative;
-    width: 380px;
+  position: relative;
+  width: 380px;
 }
 
 .reveal-text {
-    position: relative;
-    top: -50px;
-    width: 380px;
-    height: 50px;
-    background: blue;
-    animation: reveal 1s;
+  position: relative;
+  top: -50px;
+  width: 380px;
+  height: 50px;
+  background: blue;
+  animation: reveal 1s;
 }
 
 @keyframes reveal {
-    0% {
-        width: 380px
-    }
-    100% {
-        width: 0
-    }
+  0% {
+    width: 380px
+  }
+  100% {
+    width: 0
+  }
 }
 
 /*end:departments*/
+
+/* Media Queries */
+@media (max-width: 414px) {
+  #schedule, #video {
+    margin-top: 2rem;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
