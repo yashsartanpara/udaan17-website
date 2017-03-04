@@ -1,0 +1,193 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Udaan 17",
+  "type": "object",
+  "properties": {
+    "tech": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "alias": {
+            "type": "string"
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "eventName": {
+                  "type": "string"
+                },
+                "eventDescription": {
+                  "type": "string"
+                },
+                "eventIcon": {
+                  "type": "string"
+                },
+                "eventRounds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "participants": {
+                  "type": "integer"
+                },
+                "fees": {
+                  "type": "integer"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "eventManagers": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "mobileNumber": {
+                        "type": "string",
+                        "minLength": 0,
+                        "maxLength": 10
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "branchHeads": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "mobileNumber": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "branchCoHeads": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "mobileNumber": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "nontech": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "eventName": {
+            "type": "string"
+          },
+          "eventDescription": {
+            "type": "string"
+          },
+          "eventIcon": {
+            "type": "string"
+          },
+          "eventRounds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "participants": {
+            "type": "integer"
+          },
+          "fees": {
+            "type": "integer"
+          },
+          "email": {
+            "type": "string"
+          },
+          "eventManagers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "mobileNumber": {
+                  "type": "string",
+                  "minLength": 0,
+                  "maxLength": 10
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "cultural": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "eventName": {
+            "type": "string"
+          },
+          "eventDescription": {
+            "type": "string"
+          },
+          "eventIcon": {
+            "type": "string"
+          },
+          "eventRounds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "participants": {
+            "type": "integer"
+          },
+          "fees": {
+            "type": "integer"
+          },
+          "email": {
+            "type": "string"
+          },
+          "eventManagers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "mobileNumber": {
+                  "type": "string",
+                  "minLength": 0,
+                  "maxLength": 10
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
