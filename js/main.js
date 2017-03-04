@@ -2,7 +2,7 @@ var JQDoc = $(document);
 JQDoc.ready(function () {
     //begin: scrolling
     $(".main").onepage_scroll({
-        animationTime: 600,
+        animationTime: 1000,
         easing: 'ease-in-out',
         updateURL: true,
         loop: false,
