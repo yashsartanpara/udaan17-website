@@ -1,6 +1,12 @@
+@font-face {
+    font-family: 'avengers-fonts';
+    src: url('../fonts/AVENGEANCE.otf');
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
+    background-color: black;
 }
 
 section {
@@ -11,7 +17,7 @@ section {
 /* begin: index page */
 /* begin: title page */
 #udaan-title-page {
-    background-color: #333;
+    background-color: #000;
 }
 
 #udaan-logo {
@@ -23,22 +29,22 @@ section {
     width: 90vw;
 }
 
-#udaanLogo {
-    max-width: 40vw;
-    display: block;
-    margin: 0 auto;
-}
-
 #schedule {
     position: absolute;
     left: 10vw;
     bottom: 10px;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'avengers-fonts', 'sans-serif';
 }
 
 #video {
     position: absolute;
     right: 10vw;
     bottom: 10px;
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'avengers-fonts', 'sans-serif';
 }
 
 .social-links {
@@ -57,7 +63,7 @@ section {
 /*end:titlepage*/
 /* begin: tech page */
 #udaan-departments {
-    /*background-color: #333;*/
+    /*background-color: #fff;*/
 }
 
 .city {
@@ -68,25 +74,114 @@ section {
 }
 
 .Collage {
-    /*overflow: hidden;*/
-    /*background: gray;*/
     width: 100vw;
     height: 100vh;
     z-index: 2;
 }
 
-.udaan-department-logos {
-    float: left;
-    height: 100vh;
+.udaan-keycoder-logo {
+    border: 10px solid green;
+    position: absolute;
+    /*background-color: blue;*/
+    border-radius: 50%;
+    height: 16vw;
     width: 16vw;
-    /*transform:skewX(-20deg);*/
 }
 
-.udaan-department-logos img {
-    height: 100px;
-    width: 100px;
-    /*border-radius: 50%;*/
-    /*background: blue;*/
+.udaan-keycoder-logo img {
+    display: block;
+    margin: 2vw auto;
+    height: 12vw;
+    width: 12vw;
+}
+
+.udaan-embeddrones-logo {
+    border: 10px solid green;
+    position: absolute;
+    right:0;
+    /*background-color: blue;*/
+    border-radius: 50%;
+    height: 16vw;
+    width: 16vw;
+}
+
+.udaan-embeddrones-logo img {
+    display: block;
+    margin: 2vw auto;
+    height: 12vw;
+    width: 12vw;
+}
+
+.udaan-fabfactures-logo {
+    border: 10px solid green;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    /*background-color: blue;*/
+    border-radius: 50%;
+    height: 16vw;
+    width: 16vw;
+}
+
+.udaan-fabfactures-logo img {
+    display: block;
+    margin: 2vw auto;
+    height: 12vw;
+    width: 12vw;
+}
+
+.udaan-machinists-logo {
+    border: 10px solid green;
+    position: absolute;
+    right:50vw;
+    top: 0;
+    /*background-color: blue;*/
+    border-radius: 50%;
+    height: 16vw;
+    width: 16vw;
+}
+
+.udaan-machinists-logo img {
+    display: block;
+    margin: 2vw auto;
+    height: 12vw;
+    width: 12vw;
+}
+
+.udaan-rezonizers-logo {
+    border: 10px solid green;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    /*background-color: blue;*/
+    border-radius: 50%;
+    height: 16vw;
+    width: 16vw;
+}
+
+.udaan-rezonizers-logo img {
+    display: block;
+    margin: 2vw auto;
+    height: 12vw;
+    width: 12vw;
+}
+
+.udaan-skyscrapers-logo {
+    border: 10px solid green;
+    position: absolute;
+    left:50vw;
+    bottom: 0;
+    /*background-color: blue;*/
+    border-radius: 50%;
+    height: 16vw;
+    width: 16vw;
+}
+
+.udaan-skyscrapers-logo img {
+    display: block;
+    margin: 2vw auto;
+    height: 12vw;
+    width: 12vw;
 }
 
 /* end: tech page */
@@ -99,12 +194,12 @@ section {
     z-index: -1;
     position: absolute;
     height: 100vh;
-    width: 50vw;
+    width: 40vw;
 }
 
 #events {
     position: absolute;
-    width: 50vw;
+    width: 60vw;
     height: 100vh;
 }
 
@@ -147,14 +242,14 @@ section {
 }
 
 .modal-sidebar {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.7);
     float: left;
     height: 100%;
     width: 7%;
 }
 
 .modal-title {
-    background-color: rgba(255,0,0,0.2);
+    background-color: rgba(255, 255, 255, 1);
     float: left;
     height: 100%;
     width: 30%;
@@ -162,20 +257,21 @@ section {
 
 .modal-container {
     padding: 3%;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 1);
     float: left;
     height: 86.5%;
     width: 57%;
 }
 
 .modal-close {
+    cursor: pointer;
     text-align: center;
     margin: 10px auto;
     font-size: 30px;
 }
 
 .modal-logo {
-    height:40%;
+    height: 40%;
     /*padding-top: 20px;*/
 }
 
@@ -186,25 +282,35 @@ section {
     margin: 0 auto;
 }
 
-.modal-title-content{
+.modal-title-content {
     height: 60%;
 }
 
-.modal-one-liner, .modal-round{
+.modal-one-liner, .modal-round {
     height: 20%;
     /*border: 1px solid red;*/
     text-align: center;
 }
+
 /* Media Queries */
 @media (max-width: 414px) {
+    #udaan-logo {
+        height: 50vh;
+        width: 120vw;
+        left: -13vw
+        /*margin: 0 auto;*/
+    }
+
     #schedule, #video {
         bottom: 5rem;
     }
+
     .social-icon {
         width: 40px;
         height: 40px;
     }
 }
+
 @media (max-width: 780px) {
     .right-facing {
         left: -250px;
