@@ -8,12 +8,19 @@ section {
     width: 100vw;
 }
 
+/* begin: index page */
 /* begin: title page */
-#udaanText {
-    max-width: 45vw;
-    height: 40vh;
+#udaan-title-page {
+    background-color: #333;
+}
+
+#udaan-logo {
+    position: absolute;
+    z-index: 0;
     display: block;
-    margin: 0 auto;
+    margin: 5vh 5vw 5vh 5vw;
+    height: 90vh;
+    width: 90vw;
 }
 
 #udaanLogo {
@@ -35,14 +42,58 @@ section {
 }
 
 .social-links {
+    position: absolute;
+    bottom: 10px;
+    width: 100vw;
+    z-index: 1;
     text-align: center;
 }
 
 .social-icon {
+    z-index: 2;
     margin: 0 10px 0 10px;
 }
 
-/* end: title page */
+/*end:titlepage*/
+/* begin: tech page */
+#udaan-departments {
+    /*background-color: #333;*/
+}
+
+.city {
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    /*z-index: -1;*/
+}
+
+.Collage {
+    /*overflow: hidden;*/
+    /*background: gray;*/
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+
+.udaan-department-logos {
+    float: left;
+    height: 100vh;
+    width: 16vw;
+    /*transform:skewX(-20deg);*/
+}
+
+.udaan-department-logos img {
+    height: 100px;
+    width: 100px;
+    /*border-radius: 50%;*/
+    /*background: blue;*/
+}
+
+/* end: tech page */
+/* begin: nontech page */
+
+/* end: nontech page */
+/* end: index page */
 /*begin: departments*/
 .udaan-pop-heads {
     z-index: -1;
