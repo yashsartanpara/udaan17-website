@@ -7,6 +7,7 @@
     <title>Udaan2017</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jqcloud.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <script src="js/vendor/jquery-3.1.1.min.js"></script>
     <script src="js/vendor/jqcloud.min.js"></script>
     <script src="js/events.js"></script>
@@ -17,8 +18,32 @@
 <div id="events" class="left-facing"></div>
 <script>
     var words = [
-        {text: "Lorem", weight: 13},
-        {text: "Ipsum", weight: 10.5},
+        {
+            text: "Lorem",
+            weight: 13,
+            link: '#event1',
+            handlers: {
+                mouseover: function () {
+                    $('.w10').addClass('animated pulse')
+                        .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                            $(this).removeClass('animated pulse');
+                        });
+                }
+            }
+        },
+        {
+            text: "Ipsum",
+            weight: 10.5,
+            link: '#event2',
+            handlers: {
+                mouseover: function () {
+                    $('.w7').addClass('animated pulse')
+                        .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                            $(this).removeClass('animated pulse');
+                        });
+                }
+            }
+        },
         {text: "Dolor", weight: 9.4},
         {text: "Sit", weight: 8},
         {text: "Amet", weight: 6.2},
