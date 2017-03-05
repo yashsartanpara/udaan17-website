@@ -116,6 +116,14 @@ section {
     right: 0;
 }
 
+.left-facing-font{
+    right:0;
+}
+
+.right-facing-font{
+    left:0;
+}
+
 /*end:departments*/
 
 /* Media Queries */
@@ -128,5 +136,25 @@ section {
         width: 40px;
         height: 40px;
     }
+
+
+}
+
+@media (max-width: 780px) {
+    .right-facing {
+        left: -250px;
+    }
+
+    .udaan-pop-heads {
+        z-index: -1;
+        position: absolute;
+        height: 100vh;
+        width: auto;
+    }
+
+    .left-facing {
+        right: -300px;
+    }
+
 }
 
