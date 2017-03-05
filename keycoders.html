@@ -28,6 +28,20 @@
                         .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
                             $(this).removeClass('animated pulse');
                         });
+                },
+                click: function(){
+                    // console.log("yes");
+                    openeventmodal();
+                    var figure = $('#ubg').data('ubgi').slice(0,-4);
+                    var acolor = color[figure][Math.floor(Math.random()*color[figure].length)];
+                    // console.log(Math.random()*color[figure].length);
+                    $("#events-middle").css("background-color","rgb("+acolor+")");
+                    $("#events-leftmost").css("background-color","rgb("+acolor+")");
+                    $("#events-leftmost-mobile").css("background-color","rgb("+acolor+")");
+                    $(".events-last-title").css("color","rgb("+acolor+")");
+                    $(".events-last-segment").css("border","solid 1px rgb("+acolor+")");
+                    $("#events-leftmost").css("opacity","0.7");
+                    $("#events-leftmost-mobile").css("opacity","0.7");
                 }
             }
         },
@@ -54,5 +68,109 @@
         autoResize: true
     });
 </script>
+
+<div id="events-modal" class="hidden modal">
+     <section id="events-leftmost-mobile">
+
+    <div class="close" id="events-close" onclick="closeeventmodal()"></div>
+        
+    </section>
+
+    <section id="events-leftmost">
+
+     <div class="close" id="events-close" onclick="closeeventmodal()"></div>
+    </section>
+
+    <section id="events-middle">
+        <div id="events-middle-container">
+            <img src="img/ironman.svg" alt="someimg" class="events-modal-image">
+            <div id="events-middle-text-container" class="uppercase">
+                <div class="events-middle-segment">
+                    <div class="events-middle-top ">
+                        Event NAME
+                    </div>
+                    <div class="events-middle-topnext bold font-size-increased">
+                        Equal parts, swagger and smart!!
+                    </div>
+                    <div class="events-middle-title ">
+                        Participants
+                    </div>
+                    <div class="events-middle-content bold font-size-increased">
+                        2
+                    </div>
+                </div>
+                <div class="events-middle-segment">
+                    <div class="events-middle-title">
+                        Fees
+                    </div>
+                    <div class="events-middle-content bold font-size-increased">
+                        20
+                    </div>
+                </div>
+                <div class="events-middle-segment">
+                    <div class="events-middle-title">
+                        Email
+                    </div>
+                    <div class="events-middle-content bold font-size-increased">
+                        xyz@gmail.com
+                    </div>
+                </div>
+                <div class="events-middle-segment">
+                    <div class="events-middle-title">
+                        Event Managers
+                    </div>
+                    <div class="events-middle-content">
+                        <div class="event-managers bold font-size-increased">
+                        Nikunj Gajera : 9904358419
+                        </div>
+                        <div class="event-managers bold font-size-increased">
+                        Nikunj Gajera : 9904358419
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events-last">
+        <div id="events-last-container" class="uppercase">
+            <div class="events-last-segment">
+                <div class="events-last-content font-size-slightly-increased ">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni atque tempore ipsum dignissimos vero. Delectus quis eaque laboriosam nemo beatae sit ad voluptates, adipisci sint veniam, nulla expedita deserunt tenetur.
+                </div>
+            </div>
+            <div class="events-last-segment">
+                <div class="events-last-title redcolor bold">
+                Level1
+                </div>
+                <div class="events-last-content bold font-size-slightly-increased">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni a quis eaque laam nemo.
+                </div>
+            </div>
+            <div class="events-last-segment">
+                <div class="events-last-title redcolor bold">
+                Level2
+                </div>
+                <div class="events-last-content bold font-size-slightly-increased">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni atqquis eaque losam nemo beatae .
+                </div>
+            </div>
+            <div class="events-last-segment">
+                <div class="events-last-title redcolor bold">
+                Level3
+                </div>
+                <div class="events-last-content bold font-size-slightly-increased">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni atque tempore ipsum
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</div>
+
+<div class="remodal" data-remodal-id="modal">
+
+   
+</div>
 </body>
 </html>
