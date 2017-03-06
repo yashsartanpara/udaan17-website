@@ -19,31 +19,34 @@
             "items": {
               "type": "object",
               "properties": {
-                "eventName": {
+                "name": {
                   "type": "string"
                 },
-                "eventDescription": {
+                "description": {
                   "type": "string"
                 },
-                "eventIcon": {
+                "icon": {
                   "type": "string"
                 },
-                "eventRounds": {
+                "rounds": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 },
                 "participants": {
-                  "type": "integer"
-                },
-                "fees": {
-                  "type": "integer"
-                },
-                "email": {
                   "type": "string"
                 },
-                "eventManagers": {
+                "fees": {
+                  "type": "string"
+                },
+                "prizes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "managers": {
                   "type": "array",
                   "items": {
                     "type": "object",
@@ -51,10 +54,8 @@
                       "name": {
                         "type": "string"
                       },
-                      "mobileNumber": {
-                        "type": "string",
-                        "minLength": 0,
-                        "maxLength": 10
+                      "mobile": {
+                        "type": "string"
                       }
                     }
                   }
@@ -62,7 +63,7 @@
               }
             }
           },
-          "branchHeads": {
+          "heads": {
             "type": "array",
             "items": {
               "type": "object",
@@ -70,13 +71,13 @@
                 "name": {
                   "type": "string"
                 },
-                "mobileNumber": {
+                "mobile": {
                   "type": "string"
                 }
               }
             }
           },
-          "branchCoHeads": {
+          "coHeads": {
             "type": "array",
             "items": {
               "type": "object",
@@ -84,7 +85,7 @@
                 "name": {
                   "type": "string"
                 },
-                "mobileNumber": {
+                "mobile": {
                   "type": "string"
                 }
               }
@@ -98,42 +99,49 @@
       "items": {
         "type": "object",
         "properties": {
-          "eventName": {
-            "type": "string"
-          },
-          "eventDescription": {
-            "type": "string"
-          },
-          "eventIcon": {
-            "type": "string"
-          },
-          "eventRounds": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "participants": {
-            "type": "integer"
-          },
-          "fees": {
-            "type": "integer"
-          },
-          "email": {
-            "type": "string"
-          },
-          "eventManagers": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "name": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "icon": {
+                "type": "string"
+              },
+              "rounds": {
+                "type": "array",
+                "items": {
                   "type": "string"
-                },
-                "mobileNumber": {
-                  "type": "string",
-                  "minLength": 0,
-                  "maxLength": 10
+                }
+              },
+              "participants": {
+                "type": "string"
+              },
+              "fees": {
+                "type": "string"
+              },
+              "prizes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "managers": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "mobile": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -144,44 +152,48 @@
     "cultural": {
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "eventName": {
-            "type": "string"
-          },
-          "eventDescription": {
-            "type": "string"
-          },
-          "eventIcon": {
-            "type": "string"
-          },
-          "eventRounds": {
-            "type": "array",
-            "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
               "type": "string"
-            }
-          },
-          "participants": {
-            "type": "integer"
-          },
-          "fees": {
-            "type": "integer"
-          },
-          "email": {
-            "type": "string"
-          },
-          "eventManagers": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "name": {
-                  "type": "string"
-                },
-                "mobileNumber": {
-                  "type": "string",
-                  "minLength": 0,
-                  "maxLength": 10
+            },
+            "description": {
+              "type": "string"
+            },
+            "icon": {
+              "type": "string"
+            },
+            "rounds": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "participants": {
+              "type": "string"
+            },
+            "fees": {
+              "type": "string"
+            },
+            "prizes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "managers": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "mobile": {
+                    "type": "string"
+                  }
                 }
               }
             }
