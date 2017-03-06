@@ -32,6 +32,4 @@ JQDoc.ready(function () {
         $(".main").moveUp();
     });
     //end: hammer swipe events
-
-    $('#udaan-logo').appendChild('');
 });

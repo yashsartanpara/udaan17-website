@@ -3,7 +3,8 @@ JQDoc.ready(function () {
     //begin:background color and img
 
     $('body').css('background-color', $('#ubg').data('ubgc'));
-    $('.udaan-pop-heads').attr('src', "img/" + $('#ubg').data('ubgi'));
+    $('.udaan-pop-heads').attr('src', "img/" + $('#ubg').data('ubgi')+".svg");
+    $('.pop-head-line').attr('src', "img/" + $('#ubg').data('ubgi')+"-line.svg");
     //end: background color and img
 
     $('.modal-close').on('click',function () {

@@ -14,11 +14,11 @@ viewBox="0 0 46400000 27308758"
    ]]>
    #_682693049600{
     transform-origin:center;
-    animation: rotateOuter 30s infinite linear
+    animation: rotateOuter 50s infinite linear
    }
    #_682716986656{
     transform-origin:center;
-    animation: rotateInner 20s infinite linear
+    animation: rotateInner 70s infinite linear
    }
    @keyframes rotateInner {
   from {

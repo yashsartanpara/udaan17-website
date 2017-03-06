@@ -5,39 +5,36 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <title>Udaan2017</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css">
     <script src="js/vendor/jquery-3.1.1.min.js"></script>
     <script src="js/vendor/jquery.onepage-scroll.min.js"></script>
     <script src="js/vendor/hammer.min.js"></script>
     <script src="js/main.js"></script>
-    <link rel="stylesheet" href="css/jqcloud.min.css">
 </head>
 
 <body>
 <div class="main" id="swipe-window">
-    <section id="udaan-title-page">
-        <img src="img/final%20logo.svg" id="udaan-logo" alt="">
-        <div>
-            <div class="social-links">
+    <section id="udaan-title-page" class="row center-xs">
+        <div class="col"><img src="img/final%20logo.svg" id="udaan-logo" alt=""></div>
+        <div class="footer col row">
+            <div id="schedule" class="col">Schedule</div>
+            <div class="social-links col">
                 <a href="#"><img src="img/facebook.svg" class="social-icon" alt="Udaan17 Facebook"></a>
                 <a href="#"><img src="img/instagram.svg" class="social-icon" alt="Udaan17 Instagram"></a>
                 <a href="#"><img src="img/youtube.svg" class="social-icon" alt="Udaan17 Youtube"></a>
                 <a href="#"><img src="img/github.svg" class="social-icon" alt="Udaan17 Github"></a>
             </div>
-            <div>
-                <span id="schedule">Schedule</span>
-                <span id="video">Video</span>
-            </div>
+            <div id="video" class="col">Video</div>
         </div>
     </section>
     <section id="udaan-departments">
-        <img src="img/city.svg" class="city" alt="" style="transform: scaleX(-1)">
-        <div class="Collage">
-            <div class="udaan-keycoder-logo"><img src="img/keycoders.svg"/></div>
-            <div class="udaan-embeddrones-logo"><img src="img/embedrones.svg"/></div>
-            <div class="udaan-rezonizers-logo"><img src="img/resonizers.svg"/></div>
-            <div class="udaan-skyscrapers-logo"><img src="img/skyscrappers.svg"/></div>
-            <div class="udaan-machinists-logo"><img src="img/machinists.svg"/></div>
-            <div class="udaan-fabfactures-logo"><img src="img/fabfacturers.svg"/></div>
+        <div class="Collage row">
+            <div class="dept-logo col-xs udaan-keycoder-logo"><a href="keycoders.html"><img src="img/keycoders.svg"/></a></div>
+            <div class="dept-logo col-xs udaan-embeddrones-logo"><a href="embeddrones.html"><img src="img/embedrones.svg"/></a></div>
+            <div class="dept-logo col-xs udaan-skyscrapers-logo"><a href="skyscrapers.html"><img src="img/skyscrappers.svg"/></a></div>
+            <div class="dept-logo col-xs udaan-machinists-logo"><a href="machinists.html"><img src="img/machinists.svg"/></a></div>
+            <div class="dept-logo col-xs udaan-fabfactures-logo"><a href="fabfactures.html"><img src="img/fabfacturers.svg"/></a></div>
+            <div class="dept-logo col-xs udaan-rezonizers-logo"><a href="rezonizers.html"><img src="img/resonizers.svg"/></a></div>
         </div>
     </section>
     <section>

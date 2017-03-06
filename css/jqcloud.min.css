@@ -26,7 +26,8 @@ div.jqcloud a {
 }
 
 div.jqcloud span.w10 {
-    font-size: 500%
+    font-size: 500%;
+    padding:10px;
 }
 
 div.jqcloud span.w9 {
