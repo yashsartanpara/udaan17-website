@@ -11,30 +11,32 @@ viewBox="0 0 46400000 27308758"
     .fil0 {fill:#D2D3D5}
     .fil1 {fill:#333}
     .fil2 {fill:#FEFEFE;fill-rule:nonzero}
+
+    #_682693049600{
+     transform-origin:center;
+     //animation: rotateOuter 1s infinite linear
+    }
+    #_682716986656{
+     transform-origin:center;
+     //animation: rotateInner 1s infinite linear
+    }
+    @keyframes rotateInner {
+      from {
+        transform: rotate(10deg);
+      }
+      to {
+        transform: rotate(0deg);
+      }
+    }
+    @keyframes rotateOuter {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(20deg);
+    }
+
    ]]>
-   #_682693049600{
-    transform-origin:center;
-    animation: rotateOuter 50s infinite linear
-   }
-   #_682716986656{
-    transform-origin:center;
-    animation: rotateInner 70s infinite linear
-   }
-   @keyframes rotateInner {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-   @keyframes rotateOuter {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
   </style>
  </defs>
  <g id="Layer_x0020_1">

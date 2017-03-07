@@ -15,18 +15,22 @@
 <body>
 <div id="ubg" data-ubgc="#282c34" data-ubgi="ironman"></div>
 <img class="udaan-pop-heads right-facing" src="" alt="">
-<div id="events" class="left-facing-font"></div>
+<div class="events left-facing-font">
+    <div id="event"></div>
+</div>
 <img class="pop-head-line" src="" alt="">
+<img class="city" src="img/city.svg" alt="">
+<div class="dept-name">KEYCODERS</div>
 <script>
     var mouseoverhandler = function () {
-        $(this).addClass('animated pulse')
+        $(this).addClass('glow-blue')
             .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-                $(this).removeClass('animated pulse');
+                $(this).removeClass('glow-blue');
             });
     };
     var words = [
         {
-            text: "Lorem",
+            text: "one",
             weight: 13,
             link: '#event1',
             handlers: {
@@ -39,8 +43,8 @@
             }
         },
         {
-            text: "Ipsum",
-            weight: 10.5,
+            text: "two",
+            weight: 13,
             link: '#event2',
             handlers: {
                 mouseover: function () {
@@ -51,13 +55,14 @@
                 }
             }
         },
-        {text: "Dolor", weight: 9.4},
-        {text: "Sit", weight: 8},
-        {text: "Amet", weight: 6.2},
-        {text: "Consectetur", weight: 5},
-        {text: "Adipiscing", weight: 5}
+        {text: "three", weight: 13},
+        {text: "four", weight: 13},
+        {text: "seven", weight: 13}
+//        {text: "Amet", weight: 6.2},
+//        {text: "Consectetur", weight: 5},
+//        {text: "Adipiscing", weight: 5}
     ];
-    $('#events').jQCloud(words, {
+    $('#event').jQCloud(words, {
         autoResize: true
     });
 </script>

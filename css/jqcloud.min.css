@@ -27,7 +27,7 @@ div.jqcloud a {
 
 div.jqcloud span.w10 {
     font-size: 500%;
-    padding:10px;
+    padding: 10px;
 }
 
 div.jqcloud span.w9 {
@@ -47,7 +47,8 @@ div.jqcloud span.w6 {
 }
 
 div.jqcloud span.w5 {
-    font-size: 300%
+    font-size: 500%;
+    padding: 5px;
 }
 
 div.jqcloud span.w4 {
@@ -87,7 +88,8 @@ div.jqcloud span.w6 {
 }
 
 div.jqcloud span.w5 {
-    color: #90a0dd
+    color: #0cf;
+    /*color: #90a0dd*/
 }
 
 div.jqcloud span.w4 {

@@ -21,32 +21,44 @@ section {
 
 }
 
-#udaan-logo {
+.udaan-logo-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    clip-path: url(#rect-clip);
+}
+
+.udaan-logo-container img {
     height: 85vh;
+    display: block;
+    margin: 0 auto;
 }
 
 .footer {
-    /*height: 14vh;*/
+    position: absolute;
+    bottom: 0;
     width: 100vw;
-    z-index: 5;
     text-align: center;
 }
 
 #schedule {
+    float: left;
     width: 30vw;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'avengers-fonts', 'sans-serif';
 }
 
 #video {
+    float: left;
     width: 30vw;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'avengers-fonts', 'sans-serif';
 }
 
 .social-links {
+    float: left;
     width: 40vw;
 }
 
@@ -55,42 +67,85 @@ section {
 
 .city {
     position: absolute;
+    z-index: -3;
+    width: 200vw;
+    bottom: 7vh;
+}
+
+.row-1, .row-2 {
+    position: absolute;
+    height: 50vh;
     width: 100vw;
-    bottom: 0;
+}
+
+.row-2 {
+    top: 50vh;
+}
+
+.dept-logo {
+    position: absolute;
+    height: 50vh;
+    width: 40%;
+}
+
+.row-1 .dept-logo {
+    clip-path: url(#polygon-clip-rhomboid-1);
+}
+
+.row-2 .dept-logo {
+    clip-path: url(#polygon-clip-rhomboid-2);
 }
 
 .dept-logo img {
     display: block;
-    margin: auto;
-    width: 20vw;
+    margin: 0 auto;
+    height: 50vh;
+    width: 90%;
+}
+
+.one {
+    left: 30%;
+}
+
+.two {
+    left: 60%
+}
+
+.hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    pointer-events: none;
 }
 
 .dept-logo {
-    margin: 0 auto;
+    background-size: cover;
 }
 
 .udaan-keycoder-logo {
+    background: #282c34;
 }
 
 .udaan-embeddrones-logo {
-    margin-top: 7vh;
+    background: #3f1b1b;
+
 }
 
-.udaan-fabfactures-logo img {
-    margin-top: 2vh;
-    margin-left: 9vw;
+.udaan-fabfactures-logo {
+    background: #7164a5;
 }
 
 .udaan-machinists-logo {
-    margin-top: 13vh;
+    background: #1b242d;
 }
 
-.udaan-rezonizers-logo img {
-    margin-top: -7vh;
-    margin-left: 0;
+.udaan-rezonizers-logo {
+    background: #303a2e;
 }
 
 .udaan-skyscrapers-logo {
+    background: #944579;
 }
 
 /* end: tech page */
@@ -113,11 +168,29 @@ section {
     position: absolute;
     bottom: 0;
 }
+.dept-name{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    z-index: 5;
+    height: 10vh;
+    transform-origin: 0 0;
+    color: white;
+    font-family: 'avengers-fonts', 'sans-serif';
+    font-size: 3rem;
+    /*transform: rotate(90deg);*/
+}
 
-#events {
+.events {
     position: absolute;
     width: 60vw;
     height: 100vh;
+}
+#event{
+    position: relative;
+    margin: 0 auto;
+    height: 50vh;
+    width: 50vw;
 }
 
 .right-facing {
@@ -210,17 +283,36 @@ section {
 }
 
 /* Media Queries */
-@media (max-width: 414px) {
-    #udaan-logo {
+@media (max-width: 630px) {
+    .udaan-logo-container img {
+        margin-top: 15vh;
         position: relative;
-        left: 3vw;
-        width: 140vw;
-        height: 70vh;
+        left: -10vw;
+        width: 120vw;
+        height: auto;
+        max-height: 60vh;
     }
 
     #schedule, #video, .social-links {
-        font-size: 2rem;
+        font-size: 1.5rem;
         width: 100vw;
+    }
+
+    .row-1 {
+        margin-top: 10vh;
+        height: 40vh;
+    }
+
+    .row-2 {
+        margin-bottom: 10vh;
+        height: 40vh;
+    }
+
+    .dept-logo, .dept-logo img {
+        height: 40vh;
+    }
+    #event{
+        height: 85vh;
     }
 }
 
@@ -249,5 +341,28 @@ section {
         width: 100%;
         height: 7%;
         background-color: #ed1a23;
+    }
+}
+
+.glow-blue{
+    animation: neon2 0.5s ease-in;
+}
+
+@keyframes neon2 {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        text-shadow: 0 0 10px #0cf, 0 0 20px #0cf, 0 0 30px #0cf, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        text-shadow: 0 0 5px #0cf, 0 0 10px #0cf, 0 0 15px #0cf, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
     }
 }
