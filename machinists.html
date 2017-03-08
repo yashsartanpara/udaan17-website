@@ -5,66 +5,30 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Udaan2017</title>
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jqcloud.min.css">
+    <script src="data.js"></script>
+    <script>
+        var theme = {
+            primaryColor: 'red',
+            secondaryColor: 'green'
+        }
+    </script>
     <script src="js/vendor/jquery-3.1.1.min.js"></script>
+    <script src="js/vendor/handlebars.runtime.min.js"></script>
+    <script src="js/event.min.js"></script>
     <script src="js/vendor/jqcloud.min.js"></script>
     <script src="js/events.js"></script>
 </head>
 <body>
-<div id="ubg" data-ubgc="#1b242d" data-ubgi="captainamerica"></div>
+<div id="ubg" data-ubgc="#1b242d" data-ubgi="captainamerica" data-udpt="mech"></div>
 <img class="udaan-pop-heads left-facing" src="" alt="">
 <div class="events right-facing-font">
     <div id="event"></div>
 </div>
 <img class="pop-head-line" src="" alt="">
-<img class="city" src="img/city.svg" alt="">
-<div class="dept-name">machinists</div>
-<script>
-    var mouseoverhandler = function () {
-        $(this).addClass('glow-blue')
-            .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-                $(this).removeClass('glow-blue');
-            });
-    };
-    var words = [
-        {
-            text: "one",
-            weight: 13,
-            link: '#event1',
-            handlers: {
-                mouseover: function () {
-                    mouseoverhandler.call(this);
-                },
-                click: function () {
-                    openeventmodal(this);
-                }
-            }
-        },
-        {
-            text: "two",
-            weight: 13,
-            link: '#event2',
-            handlers: {
-                mouseover: function () {
-                    mouseoverhandler.call(this);
-                },
-                click: function () {
-                    openeventmodal(this);
-                }
-            }
-        },
-        {text: "three", weight: 13},
-        {text: "four", weight: 13},
-        {text: "five", weight: 13},
-        {text: "six", weight: 13}
-//        {text: "Adipiscing", weight: 5}
-    ];
-    $('#event').jQCloud(words, {
-        autoResize: true
-    });
-</script>
-<div class="modal" id="event1"></div>
-<div class="modal" id="event2"></div>
+<div id="event-modal">
+</div>
 </body>
 </html>

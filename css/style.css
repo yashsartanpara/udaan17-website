@@ -158,6 +158,41 @@ section {
 
 /* end: tech page */
 /* begin: nontech page */
+.circle {
+    border-radius: 50%;
+    /*border: 1px solid red;*/
+    display: inline-block;
+}
+
+#nontech-events {
+    background: blue;
+    position: relative;
+    right: -6vh;
+    width: 25vw;
+    height: 25vw;
+}
+
+#cultural-events {
+    /*top:4vh;*/
+    /*left: -6vh;*/
+    background: red;
+    width: 35vw;
+    height: 34vw;
+}
+
+#nights {
+    background: green;
+    position: relative;
+    left: -6vh;
+    width: 30vw;
+    height: 30vw;
+}
+
+#circles-row {
+    margin: 10vh auto;
+    height: 40vh;
+}
+
 
 /* end: nontech page */
 /* end: index page */
@@ -167,7 +202,8 @@ section {
     z-index: -1;
     position: absolute;
     height: 100vh;
-    width: 40vw;
+    right: 40vw;
+    width: auto;
 }
 
 .pop-head-line {
@@ -196,7 +232,10 @@ section {
     height: 100vh;
 }
 
-#event, #nontech-event {
+#event{
+    list-style: none;
+    font-size: 30px;
+    color: white;
     position: relative;
     margin: 0 auto;
     height: 50vh;
@@ -223,7 +262,30 @@ section {
 
 /*Modal Properties*/
 /* Media Queries */
-@media (max-width: 770px) {
+
+@media screen and (max-width: 960px) {
+    #nontech-events {
+        right: -6vw;
+        width: 32vw;
+        height: 32vw;
+    }
+
+    #cultural-events {
+        /*top:4vw;*/
+        /*left: -6vw;*/
+        width: 37vw;
+        height: 37vw;
+    }
+
+    #nights {
+        left: -6vw;
+        width: 25vw;
+        height: 25vw;
+    }
+
+}
+
+@media (max-width: 630px) {
     .udaan-logo-container img {
         margin-top: 15vh;
         position: relative;
@@ -249,6 +311,11 @@ section {
         font-size: 1rem;
     }
 
+    .dept-logo, .dept-logo img {
+        height: 40vh;
+    }
+
+
     #event {
         height: 85vh;
     }
@@ -266,7 +333,7 @@ section {
 
 @media (max-width: 780px) {
     .right-facing {
-        left: -250px;
+        left: -50vh;
     }
 
     .udaan-pop-heads {
@@ -290,27 +357,56 @@ section {
         height: 7%;
         background-color: #ed1a23;
     }
+    #nontech-events {
+        width: 40vw;
+        height: 40vw;
+        top: -10vh;
+        left: 20vw;
+    }
+    #cultural-events {
+        position: relative;
+        left: -5vw;
+        width:50vw;
+        height:50vw;
+        top: 15vh;
+    }
+    #nights {
+        width: 30vw;
+        height: 30vw;
+        left: 20vw;
+        top: 5vw;
+    }
+
 }
 
-.glow-blue {
-    animation: neon2 1s ease-in infinite;
+@media screen and (max-width: 450px) {
+    #nontech-events {
+        top: -8vh;
+    }
+
+    #cultural-events {
+
+    }
+    #nights {
+        top: 7vh;
+    }
+}
+
+
+.event-name:hover {
+    animation: neon2 0.5s ease-in;
+}
+
+.event-name > p {
+    cursor: pointer;
 }
 
 @keyframes neon2 {
     from {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
         text-shadow: 0 0 10px #0cf, 0 0 20px #0cf, 0 0 30px #0cf, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
     }
 
-    50% {
-        -webkit-transform: scale3d(1.05, 1.05, 1.05);
-        transform: scale3d(1.05, 1.05, 1.05);
-    }
-
     to {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
         text-shadow: 0 0 5px #0cf, 0 0 10px #0cf, 0 0 15px #0cf, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
     }
 }
