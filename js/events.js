@@ -17,7 +17,6 @@ JQDoc.ready(function () {
     //end: background color and img
     //begin: jqcloud
     document.eventData = getTechEvents($('#ubg').data('udpt'));
-    console.log(getWordArray(document.eventData));
     $('#event').html(getWordArray(document.eventData).map(function (event) {
         var randomPadding = Math.floor(Math.random() * 25) + 'px';
         return '<li style="padding: 0px ' +
@@ -59,12 +58,6 @@ function closeEventModal() {
     $('#event-modal').css('display', 'none');
 }
 
-var mouseoverhandler = function () {
-    $(this).addClass('glow-blue')
-        .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-            $(this).removeClass('glow-blue');
-        });
-};
 
 function getTechEvents(deptName) {
     return data.tech.find(function (dept) {
