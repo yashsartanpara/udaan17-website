@@ -24,9 +24,9 @@
 <script>
     var mouseoverhandler = function () {
         $(this).addClass('glow-blue')
-            .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-                $(this).removeClass('glow-blue');
-            });
+    };
+    var mouseouthandler = function () {
+        $(this).removeClass('glow-blue')
     };
     var words = [
         {
@@ -37,6 +37,10 @@
                 mouseover: function () {
                     mouseoverhandler.call(this);
                 },
+                mouseout:function () {
+                    mouseouthandler.call(this)
+                }
+                ,
                 click: function () {
                     openeventmodal(this);
                 }
@@ -50,6 +54,10 @@
                 mouseover: function () {
                     mouseoverhandler.call(this);
                 },
+                mouseout:function () {
+                    mouseouthandler.call(this)
+                }
+                ,
                 click: function () {
                     openeventmodal(this);
                 }
@@ -57,58 +65,17 @@
         },
         {text: "three", weight: 13},
         {text: "four", weight: 13},
-        {text: "seven", weight: 13}
-//        {text: "Amet", weight: 6.2},
-//        {text: "Consectetur", weight: 5},
+        {text: "five", weight: 13},
+        {text: "six", weight: 13}
 //        {text: "Adipiscing", weight: 5}
     ];
     $('#event').jQCloud(words, {
         autoResize: true
     });
 </script>
-
-<div class="modal" id="event1">
-    <div class="modal-sidebar">
-        <div class="modal-close">X</div>
-    </div>
-    <div class="modal-title">
-        <div class="modal-logo">
-            <img src="img/event-logos/ultimate-coding-challenge.svg" alt="">
-        </div>
-        <div class="modal-title-content">
-            bla bla bla
-        </div>
-    </div>
-    <div class="modal-container">
-        <div class="modal-one-liner">
-            <h2>One Liner</h2>
-        </div>
-        <div class="modal-round"><h3>bla</h3></div>
-        <div class="modal-round"><h3>bla</h3></div>
-        <div class="modal-round"><h3>bla</h3></div>
-    </div>
-</div>
-<div class="modal" id="event2">
-    <div class="modal-sidebar">
-        <div class="modal-close">X</div>
-    </div>
-    <div class="modal-title">
-        <div class="modal-logo">
-            <img src="img/event-logos/ultimate-coding-challenge.svg" alt="">
-        </div>
-        <div class="modal-title-content">
-            bla bla bla
-        </div>
-    </div>
-    <div class="modal-container">
-        <div class="modal-one-liner">
-            <h2>One Liner1</h2>
-        </div>
-        <div class="modal-round"><h3>bla</h3></div>
-        <div class="modal-round"><h3>bla</h3></div>
-        <div class="modal-round"><h3>bla</h3></div>
-    </div>
-</div>
+<div class="modal" id="event1"></div>
+<div class="modal" id="event2"></div>
 
 </body>
 </html>
+

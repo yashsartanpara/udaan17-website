@@ -7,19 +7,20 @@
     <title>Udaan2017</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/jqcloud.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <script src="js/vendor/jquery-3.1.1.min.js"></script>
     <script src="js/vendor/jqcloud.min.js"></script>
     <script src="js/events.js"></script>
 </head>
 <body>
-<div id="ubg" data-ubgc="#7164a5" data-ubgi="hawkeye"></div>
-<img class="udaan-pop-heads left-facing" src="" alt="">
-<div class="events right-facing-font">
-    <div id="event"></div>
+<div id="ubg" data-ubgc="#282c34" data-ubgi="spiderman"></div>
+<img class="udaan-pop-heads right-facing" src="" alt="">
+<div class="nontech-events left-facing-font">
+    <div id="nontech-event"></div>
 </div>
 <img class="pop-head-line" src="" alt="">
 <img class="city" src="img/city.svg" alt="">
-<div class="dept-name">fabfactures</div>
+<div class="dept-name">KEYCODERS</div>
 <script>
     var mouseoverhandler = function () {
         $(this).addClass('glow-blue')
@@ -30,7 +31,7 @@
     var words = [
         {
             text: "one",
-            weight: 13,
+            weight: 5,
             link: '#event1',
             handlers: {
                 mouseover: function () {
@@ -43,7 +44,7 @@
         },
         {
             text: "two",
-            weight: 13,
+            weight: 5,
             link: '#event2',
             handlers: {
                 mouseover: function () {
@@ -54,17 +55,35 @@
                 }
             }
         },
-        {text: "three", weight: 13},
-        {text: "four", weight: 13},
-        {text: "five", weight: 13},
-        {text: "six", weight: 13}
+        {text: "three", weight: 5},
+        {text: "four", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "five", weight: 5},
+        {text: "six", weight: 5}
 //        {text: "Adipiscing", weight: 5}
     ];
-    $('#event').jQCloud(words, {
+    $('#nontech-event').jQCloud(words, {
         autoResize: true
     });
 </script>
 <div class="modal" id="event1"></div>
 <div class="modal" id="event2"></div>
+
 </body>
 </html>
+

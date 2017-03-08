@@ -14,21 +14,57 @@
 <body>
 <div id="ubg" data-ubgc="#1b242d" data-ubgi="captainamerica"></div>
 <img class="udaan-pop-heads left-facing" src="" alt="">
-<div id="events" class="right-facing-font"></div>
+<div class="events right-facing-font">
+    <div id="event"></div>
+</div>
 <img class="pop-head-line" src="" alt="">
+<img class="city" src="img/city.svg" alt="">
+<div class="dept-name">machinists</div>
 <script>
+    var mouseoverhandler = function () {
+        $(this).addClass('glow-blue')
+            .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                $(this).removeClass('glow-blue');
+            });
+    };
     var words = [
-        {text: "Lorem", weight: 13},
-        {text: "Ipsum", weight: 10.5},
-        {text: "Dolor", weight: 9.4},
-        {text: "Sit", weight: 8},
-        {text: "Amet", weight: 6.2},
-        {text: "Consectetur", weight: 5},
-        {text: "Adipiscing", weight: 5}
+        {
+            text: "one",
+            weight: 13,
+            link: '#event1',
+            handlers: {
+                mouseover: function () {
+                    mouseoverhandler.call(this);
+                },
+                click: function () {
+                    openeventmodal(this);
+                }
+            }
+        },
+        {
+            text: "two",
+            weight: 13,
+            link: '#event2',
+            handlers: {
+                mouseover: function () {
+                    mouseoverhandler.call(this);
+                },
+                click: function () {
+                    openeventmodal(this);
+                }
+            }
+        },
+        {text: "three", weight: 13},
+        {text: "four", weight: 13},
+        {text: "five", weight: 13},
+        {text: "six", weight: 13}
+//        {text: "Adipiscing", weight: 5}
     ];
-    $('#events').jQCloud(words, {
+    $('#event').jQCloud(words, {
         autoResize: true
     });
 </script>
+<div class="modal" id="event1"></div>
+<div class="modal" id="event2"></div>
 </body>
 </html>
