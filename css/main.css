@@ -92,6 +92,13 @@ a:link {
 
 }
 
+.tech-department-filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
 .hidden {
     position: absolute;
     overflow: hidden;
@@ -101,28 +108,28 @@ a:link {
 }
 
 .udaan-keycoder-logo {
-    background: #d33124 url("../img/category/categoty-background/keycoders-back.svg") no-repeat;
+    background: #942219 url("../img/category/categoty-background/keycoders-back.svg") no-repeat;
 }
 
 .udaan-embeddrones-logo {
-    background: #c1333f url("../img/category/categoty-background/embeddrones-back.svg") no-repeat;
+    background: #88242C url("../img/category/categoty-background/embeddrones-back.svg") no-repeat;
 
 }
 
 .udaan-fabfactures-logo {
-    background: #605b8e url("../img/category/categoty-background/fabfacturers-back.svg") no-repeat;
+    background: #444064 url("../img/category/categoty-background/fabfacturers-back.svg") no-repeat;
 }
 
 .udaan-machinists-logo {
-    background: #0957a1 url("../img/category/categoty-background/machinists-back.svg") no-repeat;
+    background: #063D71 url("../img/category/categoty-background/machinists-back.svg") no-repeat;
 }
 
 .udaan-rezonizers-logo {
-    background: #cc435a url("../img/category/categoty-background/resonizers-back.svg") no-repeat;
+    background: #8F2F3F url("../img/category/categoty-background/resonizers-back.svg") no-repeat;
 }
 
 .udaan-skyscrapers-logo {
-    background: #189947 url("../img/category/categoty-background/skyscrapers-back.svg") no-repeat;
+    background: #116C32 url("../img/category/categoty-background/skyscrapers-back.svg") no-repeat;
 }
 
 /* end: tech page */
@@ -148,12 +155,12 @@ a:link {
     width: 23vh;
 }
 
-.udaan-nights-logo{
+.udaan-nights-logo {
 
 }
 
 .udaan-cultural-logo {
-    background: #189947 url("../img/category/categoty-background/cultural-back.svg") no-repeat;
+    background: #912614 url("../img/category/categoty-background/cultural-back.svg") no-repeat;
 }
 
 .udaan-nontech-logo {
