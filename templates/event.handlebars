@@ -1,70 +1,68 @@
 <div class="container event-container">
 
-  <div class="row event-row center-xs">
+    <div class="row event-row center-xs">
 
-    <div class="col-sm-4 col-xs-10 dark-col">
+        <div class="col-sm-4 col-xs-10 dark-col">
 
-      <div class="row start-xs">
-        <div class="col-xs-12"><img src="images/cancel.svg" alt="Close" class="close"></div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-12"><img src="images/{{urlencode name}}.svg" alt="Event icon" class="icon"></div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 title">{{name}}</div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="event-description">{{description}}</div>
-        </div>
-      </div>
-      <div class="participant-data">
-        <div class="row">
-          <div class="col-xs-6 chip">
-            <div>Participants: {{participants}}</div>
-          </div>
-          <div class="col-xs-6 chip">
-            <div>Fees: {{fees}}</div>
-          </div>
-        </div>
-        {{#if prizes}}
-          <div class="row">
-            {{#if prizes.[0]}}
-              <div class="col-xs-6 chip">Winners: {{prizes.[0]}}</div>
-            {{/if}}
-            {{#if prizes.[1]}}
-              <div class="col-xs-6 chip">Runners up: {{prizes.[1]}}</div>
-            {{/if}}
-          </div>
-        {{/if}}
-      </div>
-    </div>
-
-    <div class="col-sm-8 col-xs-10 light-col">
-        <p style="color: {{theme.primaryColor}}">{{theme.primaryColor}}</p>
-        <p style="color: {{theme.secondaryColor}}">{{theme.secondaryColor}}</p>
-      <div class="row start-xs">
-        {{#each rounds}}
-          <div class="col-xs-12">
-            <div class="title">Level {{succ @index}}</div>
-            <div>
-              <blockquote>{{this}}</blockquote>
+            <div class="row start-xs">
+                <div class="col-xs-12"><img src="img/cancel.svg" alt="Close" class="close"></div>
             </div>
-          </div>
-        {{/each}}
-      </div>
-      <div class="row managers-row">
-        {{#each managers}}
-          <div class="col-xs-12 event-managers">
-            <span class="manager-name">{{name}}:</span> {{mobile}}
-          </div>
-        {{/each}}
-      </div>
+
+            <div class="row">
+                <div class="col-xs-12"><img src="img/events/{{name}}.svg" alt="Event Icon" class="icon"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 title">{{name}}</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="event-description">{{description}}</div>
+                </div>
+            </div>
+            <div class="participant-data">
+                <div class="row">
+                    <div class="col-xs-6 chip">
+                        <div>Participants: {{participants}}</div>
+                    </div>
+                    <div class="col-xs-6 chip">
+                        <div>Fees: {{fees}}</div>
+                    </div>
+                </div>
+                {{#if prizes}}
+                    <div class="row">
+                        {{#if prizes.[0]}}
+                            <div class="col-xs-6 chip">Winners: {{prizes.[0]}}</div>
+                        {{/if}}
+                        {{#if prizes.[1]}}
+                            <div class="col-xs-6 chip">Runners up: {{prizes.[1]}}</div>
+                        {{/if}}
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+
+        <div class="col-sm-8 col-xs-10 light-col">
+            <div class="row start-xs">
+                {{#each rounds}}
+                    <div class="col-xs-12">
+                        <div class="title">Level {{succ @index}}</div>
+                        <div>
+                            <blockquote>{{this}}</blockquote>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+            <div class="row managers-row">
+                {{#each managers}}
+                    <div class="col-xs-12 event-managers">
+                        <span class="manager-name">{{name}}:</span> {{mobile}}
+                    </div>
+                {{/each}}
+            </div>
+
+        </div>
 
     </div>
-
-  </div>
 
 </div>
 

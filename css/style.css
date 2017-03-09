@@ -62,10 +62,6 @@ section {
 
 /*end:titlepage*/
 /* begin: tech page */
-#udaan-departments {
-    background-color: #eee;
-}
-
 .city {
     position: absolute;
     z-index: -3;
@@ -88,15 +84,8 @@ section {
     padding-right: 0;
 }
 
-.col-xs-12 a:link {
+a:link {
     text-decoration: none;
-}
-
-.department-name {
-    color: white;
-    font-family: 'avengers-fonts', 'sans-serif';
-    font-size: 2rem;
-    /*writing-mode: tb-rl;*/
 }
 
 .dept-text {
@@ -120,85 +109,59 @@ section {
 }
 
 .udaan-keycoder-logo {
-    background: #d33124;
-    background-image: url("../img/keycoders-dept-back.svg");
-    background-repeat: no-repeat;
+    background: #d33124 url("../img/category/categoty-background/keycoders-back.svg") no-repeat;
 }
 
 .udaan-embeddrones-logo {
-    background: #c1333f;
-    background-image: url("../img/embeddrones-dept-back.svg");
-    background-repeat: no-repeat;
+    background: #c1333f url("../img/category/categoty-background/embeddrones-back.svg") no-repeat;
 
 }
 
 .udaan-fabfactures-logo {
-    background-color: #605b8e;
-    background-image: url("../img/fabfacturers-dept-back.svg");
-    background-repeat: no-repeat;
+    background: #605b8e url("../img/category/categoty-background/fabfacturers-back.svg") no-repeat;
 }
 
 .udaan-machinists-logo {
-    background: #0957a1;
-    background-image: url("../img/machinists-dept-back.svg");
-    background-repeat: no-repeat;
+    background: #0957a1 url("../img/category/categoty-background/machinists-back.svg") no-repeat;
 }
 
 .udaan-rezonizers-logo {
-    background: #cc435a;
-    background-image: url("../img/resonizers-dept-back.svg");
-    background-repeat: no-repeat;
+    background: #cc435a url("../img/category/categoty-background/resonizers-back.svg") no-repeat;
 }
 
 .udaan-skyscrapers-logo {
-    background: #189947;
-    background-image: url("../img/skyscrapers-dept-back.svg");
-    background-repeat: no-repeat;
+    background: #189947 url("../img/category/categoty-background/skyscrapers-back.svg") no-repeat;
 }
 
 /* end: tech page */
+
 /* begin: nontech page */
-.circle {
-    border-radius: 50%;
-    /*border: 1px solid red;*/
-    display: inline-block;
+
+.udaan-cultural-logo {
+    background: #404445 url("../img/category/categoty-background/cultural-back.svg") no-repeat;
+    height: 100vh;
 }
 
-#nontech-events {
-    background: blue;
-    position: relative;
-    right: -6vh;
-    width: 25vw;
-    height: 25vw;
+.udaan-nontech-logo {
+    background: #002d4a url("../img/category/categoty-background/nontech-back.svg") no-repeat;
+    height: 100vh;
 }
 
-#cultural-events {
-    /*top:4vh;*/
-    /*left: -6vh;*/
-    background: red;
-    width: 35vw;
-    height: 34vw;
+.udaan-nights-logo {
+    background: #3a3839 url("../img/category/categoty-background/nights-back.svg") no-repeat;
+    height: 100vh;
 }
 
-#nights {
-    background: green;
-    position: relative;
-    left: -6vh;
+.category-icon {
+    height: 30vh;
     width: 30vw;
-    height: 30vw;
 }
-
-#circles-row {
-    margin: 10vh auto;
-    height: 40vh;
-}
-
 
 /* end: nontech page */
+
 /* end: index page */
 /*begin: departments*/
 .udaan-pop-heads {
-
     z-index: -1;
     position: absolute;
     height: 100vh;
@@ -232,7 +195,7 @@ section {
     height: 100vh;
 }
 
-#event{
+#event {
     list-style: none;
     font-size: 30px;
     color: white;
@@ -303,9 +266,11 @@ section {
         font-size: 1.5rem;
         width: 100vw;
     }
-    .col-xs-12{
+
+    .col-xs-12 {
         height: 50vh;
     }
+
     .dept-text {
         margin-top: 30vh;
         font-size: 1rem;
@@ -314,7 +279,6 @@ section {
     .dept-logo, .dept-logo img {
         height: 40vh;
     }
-
 
     #event {
         height: 85vh;
@@ -357,19 +321,22 @@ section {
         height: 7%;
         background-color: #ed1a23;
     }
+
     #nontech-events {
         width: 40vw;
         height: 40vw;
         top: -10vh;
         left: 20vw;
     }
+
     #cultural-events {
         position: relative;
         left: -5vw;
-        width:50vw;
-        height:50vw;
+        width: 50vw;
+        height: 50vw;
         top: 15vh;
     }
+
     #nights {
         width: 30vw;
         height: 30vw;
@@ -387,11 +354,11 @@ section {
     #cultural-events {
 
     }
+
     #nights {
         top: 7vh;
     }
 }
-
 
 .event-name:hover {
     animation: neon2 0.5s ease-in;
@@ -409,4 +376,12 @@ section {
     to {
         text-shadow: 0 0 5px #0cf, 0 0 10px #0cf, 0 0 15px #0cf, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
     }
+}
+
+.modal-open-animation {
+    animation: zoomIn 0.5s
+}
+
+.modal-close-animation {
+    animation: zoomOut 0.5s
 }
