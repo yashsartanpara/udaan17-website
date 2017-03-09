@@ -128,9 +128,32 @@ a:link {
 /* end: tech page */
 
 /* begin: nontech page */
+#udaan-nontech {
+    background-color: #333;
+}
+
+.non-tech-department-row {
+    margin: 0;
+    width: 100vw;
+}
+
+.non-tech-col {
+    margin: auto;
+    height: 100vh;
+}
+
+.non-tech-col img {
+    display: block;
+    margin: auto;
+    width: 23vh;
+}
+
+.udaan-nights-logo{
+
+}
 
 .udaan-cultural-logo {
-    background: #404445 url("../img/category/categoty-background/cultural-back.svg") no-repeat;
+    background: #189947 url("../img/category/categoty-background/cultural-back.svg") no-repeat;
 }
 
 .udaan-nontech-logo {
@@ -140,6 +163,7 @@ a:link {
 .udaan-nights-logo {
     background: #3a3839 url("../img/category/categoty-background/nights-back.svg") no-repeat;
 }
+
 /* end: nontech page */
 
 @media (max-width: 780px) {

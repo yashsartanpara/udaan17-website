@@ -5,28 +5,31 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Udaan2017</title>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/tech.css">
+    <script src="js/vendor/handlebars.runtime.min.js"></script>
+    <script src="js/vendor/jquery-3.1.1.min.js"></script>
+    <script src="js/templates/event.min.js"></script>
     <script src="data.js"></script>
     <script>
-        var theme = {
-            primaryColor: 'red',
-            secondaryColor: 'green'
-        }
+        var department = 'Rezonizers'
     </script>
-    <script src="js/vendor/jquery-3.1.1.min.js"></script>
-    <script src="js/vendor/handlebars.runtime.min.js"></script>
-    <script src="js/templates/event.min.js"></script>
-    <script src="js/events.js"></script>
+    <style>
+        body {
+            background-color: #303a2e;
+        }
+    </style>
 </head>
 <body>
-<div id="ubg" data-ubgc="#303a2e" data-ubgi="vision" data-udpt="ee"></div>
-<img class="udaan-pop-heads right-facing" src="" alt="">
+<img class="udaan-pop-heads right-facing" src="img/pop-heads-graphics/vision.svg" alt="vision">
 <div class="events left-facing-font">
-    <div id="event"></div>
+    <div id="events"></div>
 </div>
-<img class="pop-head-line" src="" alt="">
-<div id="event-modal">
-</div>
+<img class="pop-head-line" src="img/pop-heads-graphics/vision-line.svg" alt="vision line">
+<img class="city" src="img/city.svg" alt="">
+<div class="right-dept-name">RESONIZERS</div>
+<script src="js/events.js"></script>
+<div id="event-modal"></div>
 </body>
 </html>

@@ -23,9 +23,8 @@ body{
     bottom: 7vh;
 }
 
-.dept-name {
+.right-dept-name , .left-dept-name{
     position: absolute;
-    right: 20px;
     bottom: 10px;
     z-index: 5;
     height: 10vh;
@@ -34,6 +33,12 @@ body{
     font-family: 'avengers-fonts', 'sans-serif';
     font-size: 3rem;
     /*transform: rotate(90deg);*/
+}
+.right-dept-name {
+    right: 20px;
+}
+.left-dept-name{
+    left: 20px;
 }
 
 .events, .nontech-events {
