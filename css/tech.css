@@ -1,0 +1,129 @@
+body{
+    overflow: hidden;
+}
+.udaan-pop-heads {
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    right: 40vw;
+    width: auto;
+}
+
+.pop-head-line {
+    /*transform: scaleX(-1);*/
+    z-index: -2;
+    position: absolute;
+    bottom: 0;
+}
+
+.city {
+    position: absolute;
+    z-index: -3;
+    width: 200vw;
+    bottom: 7vh;
+}
+
+.dept-name {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    z-index: 5;
+    height: 10vh;
+    transform-origin: 0 0;
+    color: white;
+    font-family: 'avengers-fonts', 'sans-serif';
+    font-size: 3rem;
+    /*transform: rotate(90deg);*/
+}
+
+.events, .nontech-events {
+    position: absolute;
+    width: 60vw;
+    height: 100vh;
+}
+
+#event {
+    list-style: none;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    margin: 0 auto;
+    height: 50vh;
+    width: 50vw;
+}
+
+.right-facing {
+    left: 0;
+}
+
+.left-facing {
+    right: 0;
+}
+
+.left-facing-font {
+    right: 0;
+}
+
+.right-facing-font {
+    left: 0;
+}
+
+.event-name:hover {
+    animation: neon2 0.5s ease-in;
+}
+
+.event-name > p {
+    cursor: pointer;
+}
+
+@keyframes neon2 {
+    from {
+        text-shadow: 0 0 10px #0cf, 0 0 20px #0cf, 0 0 30px #0cf, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    }
+
+    to {
+        text-shadow: 0 0 5px #0cf, 0 0 10px #0cf, 0 0 15px #0cf, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+    }
+}
+
+.modal-open-animation {
+    animation: zoomIn 0.5s
+}
+
+.modal-close-animation {
+    animation: zoomOut 0.5s
+}
+
+@media (max-width: 780px) {
+    .col-xs-12 {
+        height: 50vh;
+    }
+
+    .dept-text {
+        margin-top: 30vh;
+        font-size: 1rem;
+    }
+
+    .dept-logo, .dept-logo img {
+        height: 40vh;
+    }
+
+    #event {
+        height: 85vh;
+    }
+
+    .right-facing {
+        left: -50vh;
+    }
+
+    .udaan-pop-heads {
+        z-index: -1;
+        position: absolute;
+        height: 100vh;
+        width: auto;
+    }
+
+    .left-facing {
+        right: -300px;
+    }
+}

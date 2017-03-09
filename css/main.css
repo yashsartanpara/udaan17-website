@@ -1,0 +1,176 @@
+body {
+    overflow-x: hidden;
+    background-color: black;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* begin: title page */
+
+.udaan-logo-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    clip-path: url(#rect-clip);
+}
+
+.udaan-logo-container img {
+    height: 85vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+}
+
+#schedule {
+    float: left;
+    width: 30vw;
+    color: white;
+    font-size: 2rem;
+    font-family: 'avengers-fonts', 'sans-serif';
+}
+
+#video {
+    float: left;
+    width: 30vw;
+    color: white;
+    font-size: 2rem;
+    font-family: 'avengers-fonts', 'sans-serif';
+}
+
+.social-links {
+    float: left;
+    width: 40vw;
+}
+
+/*end:titlepage*/
+
+/* begin: tech page */
+
+.tech-department-row {
+    height: 100vh;
+    margin: 0;
+}
+
+.tech-department-row a {
+    height: 100%;
+}
+
+.tech-department-row img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.tech-department-row-1, .tech-department-row-2 {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.dept-text {
+    margin-top: 60vh;
+    margin-bottom: 0;
+    color: white;
+    font-family: 'avengers-fonts', 'sans-serif';
+    font-size: 3rem;
+    letter-spacing: 5px;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+
+}
+
+.hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+.udaan-keycoder-logo {
+    background: #d33124 url("../img/category/categoty-background/keycoders-back.svg") no-repeat;
+}
+
+.udaan-embeddrones-logo {
+    background: #c1333f url("../img/category/categoty-background/embeddrones-back.svg") no-repeat;
+
+}
+
+.udaan-fabfactures-logo {
+    background: #605b8e url("../img/category/categoty-background/fabfacturers-back.svg") no-repeat;
+}
+
+.udaan-machinists-logo {
+    background: #0957a1 url("../img/category/categoty-background/machinists-back.svg") no-repeat;
+}
+
+.udaan-rezonizers-logo {
+    background: #cc435a url("../img/category/categoty-background/resonizers-back.svg") no-repeat;
+}
+
+.udaan-skyscrapers-logo {
+    background: #189947 url("../img/category/categoty-background/skyscrapers-back.svg") no-repeat;
+}
+
+/* end: tech page */
+
+/* begin: nontech page */
+
+.udaan-cultural-logo {
+    background: #404445 url("../img/category/categoty-background/cultural-back.svg") no-repeat;
+}
+
+.udaan-nontech-logo {
+    background: #002d4a url("../img/category/categoty-background/nontech-back.svg") no-repeat;
+}
+
+.udaan-nights-logo {
+    background: #3a3839 url("../img/category/categoty-background/nights-back.svg") no-repeat;
+}
+/* end: nontech page */
+
+@media (max-width: 780px) {
+    .udaan-logo-container img {
+        margin-top: 15vh;
+        position: relative;
+        left: -10vw;
+        width: 120vw;
+        height: auto;
+        max-height: 60vh;
+    }
+
+    .footer {
+        margin-bottom: 10vh;
+    }
+
+    #schedule, #video, .social-links {
+        font-size: 1.5rem;
+        width: 100vw;
+    }
+
+    .col-xs-12 {
+        height: 50vh;
+    }
+
+    .dept-text {
+        margin-top: 30vh;
+        font-size: 1rem;
+    }
+
+    .dept-logo, .dept-logo img {
+        height: 40vh;
+    }
+}

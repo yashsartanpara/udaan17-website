@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <title>Udaan2017</title>
     <link rel="stylesheet" href="css/flexboxgrid.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/jquery-3.1.1.min.js"></script>
     <script src="js/vendor/jquery.onepage-scroll.min.js"></script>
     <script src="js/vendor/hammer.min.js"></script>
@@ -31,46 +32,34 @@
         </div>
     </section>
     <section id="udaan-departments">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 row">
-                <div class="col-xs-4 udaan-keycoder-logo">
-                    <a href="keycoders.html">
-                        <div class="dept-text">KEYCODERS</div>
-                        <img src="img/category/category-logo/keycoders.svg"/>
-                    </a>
-                </div>
-                <div class="col-xs-4 udaan-skyscrapers-logo">
-                    <a href="skyscrapers.html">
-                        <div class="dept-text">SKYSCRAPERS</div>
-                        <img src="img/category/category-logo/skyscrappers.svg"/>
-                    </a>
-                </div>
-                <div class="col-xs-4 udaan-embeddrones-logo">
-                    <a href="embeddrones.html">
-                        <div class="dept-text">EMBEDDRONES</div>
-                        <img src="img/category/category-logo/embedrones.svg"/>
-                    </a>
-                </div>
+        <div class="row tech-department-row">
+            <div class="col-xs-12 col-sm-6 row tech-department-row-1">
+                <a href="keycoders.html" class="col-xs-4 udaan-keycoder-logo">
+                    <div class="dept-text">KEYCODERS</div>
+                    <img src="img/category/category-logo/keycoders.svg"/>
+                </a>
+                <a href="skyscrapers.html" class="col-xs-4 udaan-skyscrapers-logo">
+                    <div class="dept-text">SKYSCRAPERS</div>
+                    <img src="img/category/category-logo/skyscrappers.svg"/>
+                </a>
+                <a href="embeddrones.html" class="col-xs-4 udaan-embeddrones-logo">
+                    <div class="dept-text">EMBEDDRONES</div>
+                    <img src="img/category/category-logo/embedrones.svg"/>
+                </a>
             </div>
-            <div class="col-xs-12 col-sm-6 row">
-                <div class="col-xs-4 udaan-machinists-logo">
-                    <a href="machinists.html">
-                        <div class="dept-text">MACHINISTS</div>
-                        <img src="img/category/category-logo/machinists.svg"/>
-                    </a>
-                </div>
-                <div class="col-xs-4 udaan-fabfactures-logo">
-                    <a href="fabfactures.html">
-                        <div class="dept-text">FABFACTURERS</div>
-                        <img src="img/category/category-logo/fabfacturers.svg"/>
-                    </a>
-                </div>
-                <div class="col-xs-4 udaan-rezonizers-logo">
-                    <a href="rezonizers.html">
-                        <div class="dept-text">RESONIZERS</div>
-                        <img src="img/category/category-logo/resonizers.svg"/>
-                    </a>
-                </div>
+            <div class="col-xs-12 col-sm-6 row tech-department-row-2">
+                <a href="machinists.html" class="col-xs-4 udaan-machinists-logo">
+                    <div class="dept-text">MACHINISTS</div>
+                    <img src="img/category/category-logo/machinists.svg"/>
+                </a>
+                <a href="fabfactures.html" class="col-xs-4 udaan-fabfactures-logo">
+                    <div class="dept-text">FABFACTURERS</div>
+                    <img src="img/category/category-logo/fabfacturers.svg"/>
+                </a>
+                <a href="rezonizers.html" class="col-xs-4 udaan-rezonizers-logo">
+                    <div class="dept-text">RESONIZERS</div>
+                    <img src="img/category/category-logo/resonizers.svg"/>
+                </a>
             </div>
         </div>
         <svg class="hidden">
@@ -88,25 +77,25 @@
         </svg>
     </section>
     <section id="udaan-nontech">
-        <div class="row center-xs">
-            <div class="col-xs-4 udaan-cultural-logo">
-                <a href="cultural.html">
+        <div class="row">
+            <a href="cultural.html" class="tech-department-row">
+                <div class="col-xs-4 udaan-cultural-logo">
                     <div class="dept-text">CULTURAL</div>
                     <img src="img/category/category-logo/cultural.svg" class="category-icon">
-                </a>
-            </div>
-            <div class="col-xs-4 udaan-nontech-logo">
-                <a href="non-tech.html">
+                </div>
+            </a>
+            <a href="non-tech.html">
+                <div class="col-xs-4 udaan-nontech-logo">
                     <div class="dept-text">NON TECH</div>
                     <img src="img/category/category-logo/non-tech.svg" class="category-icon">
-                </a>
-            </div>
-            <div class="col-xs-4 udaan-nights-logo">
-                <a href="nights.html">
+                </div>
+            </a>
+            <a href="nights.html">
+                <div class="col-xs-4 udaan-nights-logo">
                     <div class="dept-text">NIGHTS</div>
                     <img src="img/category/category-logo/nights.svg" class="category-icon">
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     </section>
     <!--<section>-->
