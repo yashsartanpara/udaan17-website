@@ -3,6 +3,11 @@
     src: url('../fonts/AVENGEANCE.otf');
 }
 
+@font-face {
+    font-family: 'description';
+    src: url('../fonts/ABeeZee-Regular.ttf');
+}
+
 body{
     margin: 0;
 }
@@ -15,27 +20,28 @@ body{
     bottom: 0;
 }
 
+/* Modal CSS */
+
 #event-modal {
     height: 100%;
     display: none;
     position: relative;
     z-index: 7;
+    font-family: 'description', 'Roboto', sans-serif;
+}
+
+.event-row {
+    height: 100vh;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.5rem;
+    color: #263238;
 }
 
 .close {
-    height: 25px;
-    width: 25px;
-    margin-left: 10px;
-}
-
-.icon {
-    height: 30vh;
-    width: 30vw;
-}
-
-.event-container {
-    width: 100vw;
-    display: flex;
+    width: 8%;
+    padding: 1vw 0.5vw 2vw;
+    cursor: pointer;
 }
 
 .event-description {
@@ -44,23 +50,16 @@ body{
 
 .title {
     font-family: "Avengeance Heroic Avenger", sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 3rem;
 }
 
-.event-row {
-    height: 100vh;
-    display: flex;
-}
-
 .dark-col {
-    background-color: rgba(255,255,255,0.8);
-    /*padding-top: 5vh;*/
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .light-col {
-    padding-top: 5%;
-    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255, 0.9);
 }
 
 .participant-data {
@@ -70,8 +69,8 @@ body{
 .chip {
     font-weight: bold;
     padding: 10px 0;
-    border: 1px solid deeppink;
-    background-color: pink;
+    border: 1px solid rgb(236,239,241);
+    background-color: white;
 }
 
 .managers-row {

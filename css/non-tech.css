@@ -85,7 +85,9 @@
 /* Media queries */
 
 @media (max-width: 780px) {
-
+    body{
+        overflow-x: hidden;
+    }
     .udaan-pop-heads {
         z-index: -1;
         position: absolute;
