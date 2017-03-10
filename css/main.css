@@ -85,7 +85,7 @@ a:link {
     margin-bottom: 0;
     color: white;
     font-family: 'avengers-fonts', 'sans-serif';
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 5px;
     transform-origin: 0 0;
     transform: rotate(-90deg);
@@ -97,7 +97,7 @@ a:link {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .hidden {
@@ -146,7 +146,6 @@ a:link {
     width: 100vw;
 }
 
-
 .non-tech-col img {
     display: block;
     margin: auto;
@@ -158,15 +157,27 @@ a:link {
 }
 
 .udaan-cultural-logo {
-    background: #912614 url("../img/category/categoty-background/cultural-back.svg") no-repeat;
+    background: #888 url("../img/category/categoty-background/cultural-back.svg") no-repeat;
+}
+
+.udaan-gallery-logo {
+    background: #912614 url("../img/category/categoty-background/gallery-back.svg") no-repeat;
 }
 
 .udaan-nontech-logo {
     background: #002d4a url("../img/category/categoty-background/nontech-back.svg") no-repeat;
 }
 
+.udaan-team-logo {
+    background: #bbb url("../img/category/categoty-background/shield-back.svg") no-repeat;
+}
+
 .udaan-nights-logo {
     background: #3a3839 url("../img/category/categoty-background/nights-back.svg") no-repeat;
+}
+
+.udaan-developers-logo {
+    background: #3a3839 url("../img/category/categoty-background/developers-back.svg") no-repeat;
 }
 
 /* end: nontech page */

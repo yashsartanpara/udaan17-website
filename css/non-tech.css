@@ -43,6 +43,7 @@
 
 .left-facing-font {
     right: 0;
+    text-align: right;
 }
 
 .right-category-name, .left-category-name {

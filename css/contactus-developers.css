@@ -1,0 +1,70 @@
+body {
+    background-color: #000;
+}
+
+.contactus-container {
+    margin: 0;
+    height: 100vh;
+    padding: 4vw 10vw;
+}
+
+.row {
+    margin: 0;
+}
+
+.container-belt {
+    z-index: -1;
+    position: absolute;
+    background-color: white;
+    height: 15vw;
+    width: 100vw;
+}
+
+.shield-logo {
+    position: relative;
+    border-radius: 50%;
+    padding: 1.5vw;
+    background-color: white;
+    display: block;
+    margin: auto;
+    width: 20vw;
+    height: 20vw;
+}
+
+.contactus-title {
+    text-align: center;
+    position: relative;
+    font-size: 2.5rem;
+    color: #fff;
+    margin: auto;
+    font-family: 'avengers-fonts', 'sans-serif';
+}
+
+.contactus-text {
+    width: 80vw;
+}
+
+.address-pnone-email {
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.address-pnone-email a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 780px) {
+    .address-pnone-email {
+        font-size: 2.3rem;
+    }
+}
+
+
+/*begin:developers*/
+.developer{
+    padding: 10px;
+    margin: 10px;
+    background: rgba(255,255,255,0.7);
+}
