@@ -41,7 +41,7 @@ body{
     left: 20px;
 }
 
-.events, .nontech-events {
+.events {
     position: absolute;
     width: 60vw;
     height: 100vh;

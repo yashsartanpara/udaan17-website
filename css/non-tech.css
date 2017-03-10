@@ -1,0 +1,101 @@
+body {
+    overflow: hidden;
+}
+
+.udaan-pop-heads {
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    right: 40vw;
+    width: auto;
+}
+
+.events {
+    position: absolute;
+    width: 60vw;
+    height: 100vh;
+}
+
+.pop-head-line {
+    z-index: -2;
+    position: absolute;
+    bottom: 0;
+}
+
+.right-facing {
+    left: 0;
+}
+
+.right-facing-font {
+    left: 0;
+}
+
+.city {
+    position: absolute;
+    z-index: -3;
+    width: 200vw;
+    bottom: 7vh;
+}
+
+.nontech-events, .nights {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-facing-font {
+    right: 0;
+}
+
+.right-category-name, .left-category-name {
+    position: absolute;
+    bottom: 10px;
+    z-index: 5;
+    height: 10vh;
+    transform-origin: 0 0;
+    color: white;
+    font-family: 'avengers-fonts', 'sans-serif';
+    font-size: 3rem;
+    right: 20px;
+}
+
+.left-category-name {
+    left: 20px;
+}
+
+.left-facing {
+    right: 0;
+}
+
+.event-name:hover {
+    animation: neon2 0.5s ease-in;
+}
+
+.modal-open-animation {
+    animation: zoomIn 0.5s
+}
+
+.modal-close-animation {
+    animation: zoomOut 0.5s
+}
+
+/* Media queries */
+
+@media (max-width: 780px) {
+
+    .udaan-pop-heads {
+        z-index: -1;
+        position: absolute;
+        height: 100vh;
+        width: auto;
+    }
+
+    .right-facing {
+        left: -50vh;
+    }
+
+    .left-facing {
+        right: -300px;
+    }
+
+}

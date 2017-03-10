@@ -4,34 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>Cultural</title>
-  <link rel="stylesheet" href="css/flexboxgrid.min.css">
+  <title>FabFacturers</title>
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/non-tech.css">
-  <script src="js/vendor/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="css/tech.css">
   <script src="js/vendor/handlebars.runtime.min.js"></script>
+  <script src="js/vendor/jquery-3.1.1.min.js"></script>
   <script src="js/templates/event.min.js"></script>
   <script src="data.js"></script>
-
+  <script>
+    var events = data.tech.find(function (department) {
+      return department.alias == 'FabFacturers';
+    }).events;
+  </script>
   <style>
     body {
-      background-color: #912614;
+      background-color: #7164a5;
     }
   </style>
-  <script>
-    var events = data.cultural;
-  </script>
-
 </head>
 <body>
-<img class="udaan-pop-heads left-facing" src="img/pop-heads-graphics/scarlet.svg" alt="Scarlet Witch">
+<img class="udaan-pop-heads left-facing" src="img/pop-heads-graphics/hawkeye.svg" alt="hawkeye">
 <div class="events right-facing-font">
   <div id="events"></div>
 </div>
-<img class="pop-head-line" src="img/pop-heads-graphics/scarletwitch-line.svg" alt="Scarlet Witch Line">
-<!--<img class="city" src="img/city.svg">-->
-<div class="left-category-name">CULTURAL</div>
+<img class="pop-head-line" src="img/pop-heads-graphics/hawkeye-line.svg" alt="hawkeye line">
+<img class="city" src="img/city.svg" alt="">
+<div class="left-dept-name">FABFACTURERS</div>
 <div id="event-modal"></div>
 <script src="js/events.js"></script>
 </body>
