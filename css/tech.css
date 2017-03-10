@@ -1,6 +1,7 @@
-body{
-    overflow: hidden;
+body {
+    /*overflow: hidden;*/
 }
+
 .udaan-pop-heads {
     z-index: -1;
     position: absolute;
@@ -16,14 +17,7 @@ body{
     bottom: 0;
 }
 
-.city {
-    position: absolute;
-    z-index: -3;
-    width: 200vw;
-    bottom: 7vh;
-}
-
-.right-dept-name , .left-dept-name{
+.right-dept-name, .left-dept-name {
     position: absolute;
     bottom: 10px;
     z-index: 5;
@@ -34,27 +28,18 @@ body{
     font-size: 3rem;
     /*transform: rotate(90deg);*/
 }
+
 .right-dept-name {
     right: 20px;
 }
-.left-dept-name{
+
+.left-dept-name {
     left: 20px;
 }
 
 .events {
     position: absolute;
     width: 60vw;
-    height: 100vh;
-}
-
-#event {
-    list-style: none;
-    font-size: 30px;
-    color: white;
-    position: relative;
-    margin: 0 auto;
-    height: 50vh;
-    width: 50vw;
 }
 
 .right-facing {
@@ -66,29 +51,26 @@ body{
 }
 
 .left-facing-font {
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10vh;
     right: 0;
+    width: 100vw;
 }
 
 .right-facing-font {
+    padding-top: 10vh;
+    padding-left: 10px;
     left: 0;
+    width: 100vw;
 }
 
-.event-name:hover {
-    animation: neon2 0.5s ease-in;
-}
-
-.event-name > p {
+.event-name {
+    list-style: none;
+    color: white;
+    font-family: "Avengeance Heroic Avenger", sans-serif;
+    font-size: 2rem;
     cursor: pointer;
-}
-
-@keyframes neon2 {
-    from {
-        text-shadow: 0 0 10px #0cf, 0 0 20px #0cf, 0 0 30px #0cf, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
-    }
-
-    to {
-        text-shadow: 0 0 5px #0cf, 0 0 10px #0cf, 0 0 15px #0cf, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
-    }
 }
 
 .modal-open-animation {
@@ -100,10 +82,6 @@ body{
 }
 
 @media (max-width: 780px) {
-    .col-xs-12 {
-        height: 50vh;
-    }
-
     .dept-text {
         margin-top: 30vh;
         font-size: 1rem;
@@ -118,6 +96,10 @@ body{
     }
 
     .right-facing {
+        left: -40vh;
+    }
+
+    .vision-pophead {
         left: -50vh;
     }
 
@@ -129,6 +111,6 @@ body{
     }
 
     .left-facing {
-        right: -300px;
+        right: -50vh;
     }
 }

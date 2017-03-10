@@ -1,0 +1,10 @@
+.contactus-container{
+    margin: 0;
+    height: 100vh;
+    padding: 10vh 10vw;
+}
+.shield{
+    display: block;
+    margin: auto;
+    width: 25vw;
+}

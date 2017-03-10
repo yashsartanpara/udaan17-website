@@ -93,6 +93,7 @@ a:link {
 }
 
 .tech-department-filter {
+    z-index: -1;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -141,18 +142,15 @@ a:link {
 
 .non-tech-department-row {
     margin: 0;
+    height: 100vh;
     width: 100vw;
 }
 
-.non-tech-col {
-    margin: auto;
-    height: 100vh;
-}
 
 .non-tech-col img {
     display: block;
     margin: auto;
-    width: 23vh;
+    width: 70%;
 }
 
 .udaan-nights-logo {

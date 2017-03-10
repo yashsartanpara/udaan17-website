@@ -1,5 +1,10 @@
-body {
-    overflow: hidden;
+#nontechEvents {
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    height: 100vh;
+    overflow: auto;
+    margin: 0;
+    z-index: 6;
 }
 
 .udaan-pop-heads {
@@ -30,13 +35,6 @@ body {
     left: 0;
 }
 
-.city {
-    position: absolute;
-    z-index: -3;
-    width: 200vw;
-    bottom: 7vh;
-}
-
 .nontech-events, .nights {
     position: absolute;
     width: 100vw;
@@ -53,7 +51,7 @@ body {
     z-index: 5;
     height: 10vh;
     transform-origin: 0 0;
-    color: white;
+    color: black;
     font-family: 'avengers-fonts', 'sans-serif';
     font-size: 3rem;
     right: 20px;
@@ -67,8 +65,13 @@ body {
     right: 0;
 }
 
-.event-name:hover {
-    animation: neon2 0.5s ease-in;
+.event-name {
+    line-height: 40px;
+    list-style: none;
+    color: white;
+    font-family: "Avengeance Heroic Avenger", sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 .modal-open-animation {
@@ -95,7 +98,7 @@ body {
     }
 
     .left-facing {
-        right: -300px;
+        right: -100vw;
     }
 
 }
