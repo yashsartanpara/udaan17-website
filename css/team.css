@@ -1,6 +1,5 @@
 body {
-    background: #e0e0e0 url("../img/category/categoty-background/shield-back.svg") center center no-repeat;
-    background-attachment: fixed;
+    background: #e0e0e0 url("../img/category/category-background/shield-back.svg") no-repeat fixed center center;
 }
 
 .center {

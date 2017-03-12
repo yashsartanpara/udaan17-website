@@ -1,5 +1,5 @@
 #nontechEvents {
-    background-color: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3) url("../img/category/category-background/nontech-back.svg") no-repeat center;
     position: absolute;
     height: 100vh;
     overflow: auto;

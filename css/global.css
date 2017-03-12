@@ -12,6 +12,13 @@ body{
     margin: 0;
 }
 
+.coming-soon {
+    font-family: 'avengers-fonts', sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
 .city {
     filter: grayscale(50%);
     position: absolute;

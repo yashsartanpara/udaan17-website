@@ -89,8 +89,7 @@ body {
 }
 
 .developers-background {
-    background: url("../img/category/categoty-background/deadpool-love.jpg") center center;
-    background-attachment: fixed;
+    background: url("../img/category/category-background/deadpool-love.jpg") fixed center center;
     background-size: cover;
     z-index: -1;
     position: absolute;
