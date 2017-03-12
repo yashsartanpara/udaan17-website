@@ -64,46 +64,22 @@ body {
 /*begin:developers*/
 .dev-category-container {
     position: absolute;
-    bottom: 10vh;
-    width: 100vw;
-}
-
-.contect-tab {
-    position: relative;
-    top: -10px;
-    margin: auto;
-    height: 30vh;
-    border-radius: 5px;
-    background: #fff;
+    top: 80vh;
 }
 
 .dev-category {
     padding: 10px;
     margin: auto;
     background: rgba(255, 255, 255, 0.9);
-    border-radius: 5px;
     width: 50vw;
     text-align: center;
 }
 
-.developers-container {
-    display: none;
-}
-
-.developers-container.active {
-    display: block;
-}
-
-.dev-animation-open {
-    animation: dev-open 1s;
-}
-
-.dev-animation-close {
-    animation: dev-close 1s;
-}
-
 .developer {
-    background: rgba(0, 0, 0, 0.7);
+    margin: 3px;
+    border-radius: 5px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width: 780px) {
@@ -112,26 +88,9 @@ body {
     }
 }
 
-@keyframes dev-open {
-    from {
-        height: 0;
-    }
-    to {
-        height: 30vh;
-    }
-}
-
-@keyframes dev-close {
-    from {
-        height: 30vh;
-    }
-    to {
-        height: 0;
-    }
-}
-
 .developers-background {
     background: url("../img/category/categoty-background/deadpool-love.jpg") center center;
+    background-attachment: fixed;
     background-size: cover;
     z-index: -1;
     position: absolute;

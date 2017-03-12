@@ -11,45 +11,42 @@
 </head>
 <style>
     body {
-        background: #333;
+        overflow-x: hidden;
     }
 </style>
 <body>
 <div class="developers-background"></div>
 <div class="dev-category-container row">
-    <div class="contect-tab col-sm-7 developers-container row around-sm" id="web">
-        <div class="col-sm-2 developer">
-            maunil
-        </div>
-        <div class="col-sm-2 developer">
-            maunil
-        </div>
-        <div class="col-sm-2 developer">
-            maunil
-        </div>
+    <div class="dev-category col-sm-12 row">
+        <div class="col-sm-2 col-xs-12"><img src="img/social-icon/www.svg" alt="web"></div>
+        <div class="col-sm-2 col-xs-12"><b>Web Developers</b></div>
+        <div class="col-sm-2 col-xs-12 developer">Dhruvin Gandhi</div>
+        <div class="col-sm-2 col-xs-12 developer">Maunil Swadas</div>
+        <div class="col-sm-2 col-xs-12 developer">Chintan Achariya</div>
     </div>
-    <div class="contect-tab col-sm-7 developers-container row around-sm" id="graphics">
-        <div class="col-xs-3 developer">
-            maunil
-        </div>
-        <div class="col-xs-3 developer">
-            maunil
-        </div>
+    <div class="dev-category col-sm-12 row">
+        <div class="col-sm-2 col-xs-12"><img src="img/social-icon/graphics.svg" alt="graphics"></div>
+        <div class="col-sm-2 col-xs-12"><b>Graphics Developer</b></div>
+        <div class="col-sm-2 col-xs-12 developer">Dixita Ganatra</div>
+        <div class="col-sm-2 col-xs-12 developer">Vatsal Trivedi</div>
     </div>
-    <div class="dev-category row around-sm around-xs">
-        <div class="col-sm-12 col-xs-12">MADE WITH CODE <3</div>
-        <div class="col-sm-2 col-xs-2" onclick="openDevelopersContainer('#web')"><img src="img/social-icon/www.svg" alt="web"></div>
-        <div class="col-sm-2 col-xs-2" onclick="openDevelopersContainer('#graphics')"><img src="img/social-icon/graphics.svg" alt="ui"></div>
-        <div class="col-sm-2 col-xs-2" onclick="openDevelopersContainer('#backend')"><img src="img/social-icon/aws.svg" alt="backend"></div>
-        <div class="col-sm-2 col-xs-2" onclick="openDevelopersContainer('#windows')"><img src="img/social-icon/windows.svg" alt="windows"></div>
-        <div class="col-sm-2 col-xs-2" onclick="openDevelopersContainer('#android')"><img src="img/social-icon/android.svg" alt="android"></div>
+    <div class="dev-category col-sm-12 row">
+        <div class="col-sm-2 col-xs-12"><img src="img/social-icon/aws.svg" alt="aws"></div>
+        <div class="col-sm-2 col-xs-12"><b>Backend Developer</b></div>
+        <div class="col-sm-2 col-xs-12 developer">Divyesh Peshavaria</div>
     </div>
-</div>
+    <div class="dev-category col-sm-12 row">
+        <div class="col-sm-2 col-xs-12"><img src="img/social-icon/windows.svg" alt="windows"></div>
+        <div class="col-sm-2 col-xs-12"><b>Windows Developer</b></div>
+        <div class="col-sm-2 col-xs-12 developer">Dhruv Suthar</div>
+    </div>
+    <div class="dev-category col-sm-12 row">
+        <div class="col-sm-2 col-xs-12"><img src="img/social-icon/android.svg" alt="android"></div>
+        <div class="col-sm-2 col-xs-12"><b>Android Developer</b></div>
+        <div class="col-sm-2 col-xs-12 developer">Varun Barad</div>
+        <div class="col-sm-2 col-xs-12 developer">Pranshu Dave</div>
+    </div>
 
-<script>
-    function openDevelopersContainer(id) {
-        $(id).toggleClass('active dev-animation-open');
-    }
-</script>
+</div>
 </body>
 </html>
