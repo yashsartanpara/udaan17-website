@@ -1,0 +1,37 @@
+body {
+    background: #e0e0e0 url("../img/category/categoty-background/shield-back.svg") center center no-repeat;
+    background-attachment: fixed;
+}
+
+.center {
+    text-align: center;
+}
+
+.row {
+    margin: 0;
+}
+
+.gslr, .apex {
+    border-radius: 50%;
+    background-color: #002D4A;
+    padding: 0.5vh;
+}
+
+.gslr img, .apex img {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.name-pos {
+    background: rgba(255,255,255,0.7);
+    font-family: 'avengers-fonts', 'sans-serif';
+    position: relative;
+}
+
+@media only screen and (min-width: 48em) {
+    .name-pos {
+        top: -10vh;
+    }
+
+}

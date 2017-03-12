@@ -3,37 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-    <title>Title</title>
+    <title>Developers</title>
     <link rel="stylesheet" href="css/flexboxgrid.min.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/contactus-developers.css">
+    <script src="js/vendor/jquery-3.1.1.min.js"></script>
 </head>
 <style>
     body {
-        background: #DFE0D6;
-    }
-    .developers-background{
-        position: absolute;
-        right: 0;
-        height: 100vh;
-        display: block;
-        margin: auto;
-        filter:grayscale(50%);
+        background: #333;
     }
 </style>
 <body>
-    <img class="developers-background" src="img/pop-heads-graphics/developers-background.png" alt="back img">
-    <div class="developers-container">
-        <div class="developer">
-            <!--<img src="" class="dev-logo" alt="">-->
-            <div class="dev-name">Maunil Swadas</div>
-            <div class="dev-email">swadasmaunil@gmail.com</div>
+<div class="developers-background"></div>
+<div class="dev-category-container row">
+    <div class="contect-tab col-sm-7 developers-container row around-sm" id="web">
+        <div class="col-sm-2 developer">
+            maunil
         </div>
-        <div class="developer">
-            <!--<img src="" class="dev-logo" alt="">-->
-            <div class="dev-name">Maunil Swadas</div>
-            <div class="dev-email">swadasmaunil@gmail.com</div>
+        <div class="col-sm-2 developer">
+            maunil
+        </div>
+        <div class="col-sm-2 developer">
+            maunil
         </div>
     </div>
+    <div class="contect-tab col-sm-7 developers-container row around-sm" id="graphics">
+        <div class="col-xs-3 developer">
+            maunil
+        </div>
+        <div class="col-xs-3 developer">
+            maunil
+        </div>
+    </div>
+    <div class="dev-category row around-sm around-xs">
+        <div class="col-sm-12 col-xs-12">MADE WITH CODE <3</div>
+        <div class="col-sm-2 col-xs-2" onclick="openDevelopersContainer('#web')"><img src="img/social-icon/www.svg" alt="web"></div>
+        <div class="col-sm-2 col-xs-2" onclick="openDevelopersContainer('#graphics')"><img src="img/social-icon/graphics.svg" alt="ui"></div>
+        <div class="col-sm-2 col-xs-2" onclick="openDevelopersContainer('#backend')"><img src="img/social-icon/aws.svg" alt="backend"></div>
+        <div class="col-sm-2 col-xs-2" onclick="openDevelopersContainer('#windows')"><img src="img/social-icon/windows.svg" alt="windows"></div>
+        <div class="col-sm-2 col-xs-2" onclick="openDevelopersContainer('#android')"><img src="img/social-icon/android.svg" alt="android"></div>
+    </div>
+</div>
+
+<script>
+    function openDevelopersContainer(id) {
+        $(id).toggleClass('active dev-animation-open');
+    }
+</script>
 </body>
 </html>
