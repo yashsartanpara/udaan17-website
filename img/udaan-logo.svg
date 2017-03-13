@@ -14,15 +14,15 @@
 	@media (min-width: 770px) {
 	#outer{
      transform-origin:center;
-     //animation: rotateOuter 50s infinite linear
+     animation: rotateOuter 50s infinite linear
     }
     #middle{
      transform-origin:center;
-     //animation: rotateInner 30s infinite linear
+     animation: rotateInner 30s infinite linear
     }
 #inner {
      transform-origin:center;
-     //animation: rotateOuter 20s infinite linear
+     animation: rotateOuter 20s infinite linear
 }
 	}
 

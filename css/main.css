@@ -31,6 +31,7 @@ section {
 }
 
 #schedule {
+    padding-top: 10px;
     float: left;
     width: 30vw;
     color: white;
@@ -39,6 +40,7 @@ section {
 }
 
 #video {
+    padding-top: 10px;
     float: left;
     width: 30vw;
     color: white;
@@ -81,6 +83,7 @@ a:link {
 }
 
 .dept-text {
+    margin-left: 10px;
     margin-top: 60vh;
     margin-bottom: 0;
     color: white;
@@ -183,6 +186,14 @@ a:link {
 /* end: nontech page */
 
 @media (max-width: 780px) {
+
+    .tech-department-row img {
+        width: 60%;
+        margin: -15px auto;
+    }
+    .tech-department-row-1 img{
+        margin: 15px auto;
+    }
     .udaan-logo-container img {
         margin-top: 15vh;
         position: relative;
@@ -197,10 +208,13 @@ a:link {
     }
 
     #schedule, #video, .social-links {
+        padding-top: 0;
         font-size: 1.5rem;
         width: 100vw;
     }
-
+    .tech-department-row-1{
+        height: 45vh;
+    }
     .col-xs-12 {
         height: 50vh;
     }

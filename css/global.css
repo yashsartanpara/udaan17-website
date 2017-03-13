@@ -3,6 +3,13 @@
     src: url('../fonts/AVENGEANCE.otf');
 }
 
+body{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 @font-face {
     font-family: 'description';
     src: url('../fonts/ABeeZee-Regular.ttf');
