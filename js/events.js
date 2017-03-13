@@ -32,7 +32,7 @@ function openEventModal(elem) {
 function closeEventModal() {
   var modal = $('#event-modal')
     .removeClass('modal-open-animation')
-    .addClass('modal-close-animation')
+    .addClass('modal-close-animation');
   setTimeout(function () {
     modal.css('display', 'none');
   }, 500)
@@ -48,3 +48,9 @@ function populateModal(index) {
     history.back()
   });
 }
+
+$(document).keyup(function(e) {
+    if (e.keyCode == 27) {
+      closeEventModal()
+    }
+});

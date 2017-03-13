@@ -82,6 +82,11 @@ body {
     background: rgba(255, 255, 255, 0.9);
 }
 
+.developer a {
+    color: black;
+    text-decoration: none;
+}
+
 @media (max-width: 780px) {
     .dev-category {
         width: 90vw;
