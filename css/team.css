@@ -46,12 +46,8 @@ body {
 .core {
     border: 3px solid #E0E0E0;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     font-size: 1.5rem;
-}
-
-.white-text {
-    color: #fff;
 }
 
 .name-pos {
