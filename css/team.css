@@ -3,7 +3,7 @@ body {
 }
 
 .center {
-    font-family: "Avengeance Heroic Avenger", sans-serif;
+    font-family: "description", sans-serif;
     text-align: center;
     font-weight:bold;
 }
@@ -47,13 +47,14 @@ body {
 .core {
     border: 3px solid #E0E0E0;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.3);
     font-size: 1.1rem;
 }
 
 .name-pos {
     background: rgba(255, 255, 255, 0.7);
-    /*font-family: 'avengers-fonts', 'sans-serif';*/
+    font-family: 'description', 'sans-serif';
+    font-size: 1.25rem;
     position: relative;
 }
 

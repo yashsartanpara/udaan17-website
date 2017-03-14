@@ -17,7 +17,7 @@ $(function () {
     $('.event-name').click(function () {
         openEventModal(this);
     });
-    $('.head-name').click(function () {
+    $('.head-title').click(function () {
         openHeadsModal();
     });
 });
