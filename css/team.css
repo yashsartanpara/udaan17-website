@@ -3,8 +3,9 @@ body {
 }
 
 .center {
-    font-family: 'avengers-fonts', 'sans-serif';
+    font-family: "Avengeance Heroic Avenger", sans-serif;
     text-align: center;
+    font-weight:bold;
 }
 
 .row {
@@ -23,8 +24,8 @@ body {
 }
 
 .apex {
-    height: 146px;
-    width: 146px;
+    height: auto;
+    width: 98%;
 }
 
 .gslr img, .apex img {
@@ -39,25 +40,26 @@ body {
 }
 
 .apex img {
-    height: 146px;
-    width: 146px;
+    height: auto;
+    width: 98%;
 }
 
 .core {
     border: 3px solid #E0E0E0;
     padding: 10px;
     background: rgba(0, 0, 0, 0.6);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 .name-pos {
     background: rgba(255, 255, 255, 0.7);
-    font-family: 'avengers-fonts', 'sans-serif';
+    /*font-family: 'avengers-fonts', 'sans-serif';*/
     position: relative;
 }
 
-@media only screen and (min-width: 48em) {
-    .name-pos {
-        top: -10vh;
+@media (max-width: 780px) {
+    .gslr ,.gslr img{
+        height: auto;
+        width: 100%;
     }
 }

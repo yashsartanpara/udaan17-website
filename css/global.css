@@ -3,6 +3,10 @@
     src: url('../fonts/AVENGEANCE.otf');
 }
 
+.avengers-font{
+    font-family: 'avengers-fonts', 'sans-serif' !important;
+}
+
 body{
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -35,7 +39,12 @@ body{
 }
 
 /* Modal CSS */
-
+.head-name{
+    color: white;
+    font-family: "Avengeance Heroic Avenger", sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+}
 #event-modal {
     /*height: 100%;*/
     display: none;
