@@ -3,11 +3,11 @@
     src: url('../fonts/AVENGEANCE.otf');
 }
 
-.avengers-font{
+.avengers-font {
     font-family: 'avengers-fonts', 'sans-serif' !important;
 }
 
-body{
+body {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -19,7 +19,7 @@ body{
     src: url('../fonts/ABeeZee-Regular.ttf');
 }
 
-body{
+body {
     margin: 0;
 }
 
@@ -39,12 +39,6 @@ body{
 }
 
 /* Modal CSS */
-.head-name{
-    color: white;
-    font-family: "Avengeance Heroic Avenger", sans-serif;
-    font-size: 2rem;
-    cursor: pointer;
-}
 #event-modal {
     /*height: 100%;*/
     display: none;
@@ -82,7 +76,7 @@ body{
 }
 
 .light-col {
-    background-color: rgba(255,255,255, 0.95);
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 .participant-data {
@@ -92,7 +86,7 @@ body{
 .chip {
     font-weight: bold;
     padding: 10px 0;
-    border: 1px solid rgb(236,239,241);
+    border: 1px solid rgb(236, 239, 241);
     background-color: white;
 }
 

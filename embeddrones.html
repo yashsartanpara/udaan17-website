@@ -12,11 +12,14 @@
     <script src="js/vendor/handlebars.runtime.min.js"></script>
     <script src="js/vendor/jquery-3.1.1.min.js"></script>
     <script src="js/templates/event.min.js"></script>
+    <script src="js/templates/heads.min.js"></script>
     <script src="data.js"></script>
     <script>
-      var events = data.tech.find(function (department) {
+      var embeddrones = data.tech.find(function (department) {
         return department.alias == 'Embeddrones';
-      }).events;
+      });
+      var events = embeddrones.events;
+      var heads = {'heads':embeddrones.heads,'coHeads':embeddrones.coHeads};
     </script>
     <style>
         body {
@@ -28,11 +31,13 @@
 <img class="udaan-pop-heads left-facing" src="img/pop-heads-graphics/antman.svg" alt="antman">
 <div class="events right-facing-font">
     <div id="events"></div>
+    <div class="head-name">Heads</div>
 </div>
 <img class="pop-head-line" src="img/pop-heads-graphics/antman-line.svg" alt="antman line">
 <img class="city" src="img/cityline-color.svg" alt="">
 <div class="left-dept-name" >EMBEDDRONES</div>
 <div id="event-modal"></div>
+<div id="heads-modal"></div>
 <script src="js/events.js"></script>
 </body>
 </html>

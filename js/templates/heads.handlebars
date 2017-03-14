@@ -1,0 +1,19 @@
+<div class="row heads-modal-container around-sm middle-sm">
+    <img src="img/cancel.svg" alt="" class="close">
+    <div class="col-sm-6 row">Heads:</div>
+        <div class="col-sm-6 row">
+        {{#each heads}}
+            <div class="col-sm-6">
+                {{name}}<br>{{mobile}}
+            </div>
+        {{/each}}
+    </div>
+    <div class="col-sm-6 row">coHeads:</div>
+    <div class="col-sm-6 row">
+        {{#each coHeads}}
+            <div class="col-sm-6">
+                {{name}}<br>{{mobile}}
+            </div>
+        {{/each}}
+    </div>
+</div>

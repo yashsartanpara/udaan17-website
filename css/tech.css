@@ -81,6 +81,28 @@ body {
     animation: zoomOut 0.5s
 }
 
+/*begin : heads modal*/
+.head-name {
+    color: white;
+    font-family: "Avengeance Heroic Avenger", sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#heads-modal {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width:100vw;
+    background-color: rgba(255,255,255,0.7);
+}
+.heads-modal-container{
+    margin: auto;
+    width: 50vw;
+    height: 100vh;
+}
+/*end: heads modal*/
+
 @media (max-width: 780px) {
     body{
         overflow-x: hidden;
