@@ -220,6 +220,10 @@ a:link {
     .tech-department-row-1{
         height: 45vh;
     }
+    .non-tech-department-row img{
+        margin: -15px auto;
+    }
+
     .col-xs-12 {
         height: 50vh;
     }

@@ -107,6 +107,7 @@ body {
 }
 
 #heads-modal {
+    z-index: 7;
     display: none;
     position: absolute;
     height: 100vh;
