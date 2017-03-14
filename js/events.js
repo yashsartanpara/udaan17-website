@@ -11,7 +11,7 @@ $(function () {
         return '<div class="col-sm-4 col-xs-12 center-xs event-name" data-index="' + index + '">' + event.name + '</div>'
     }));
     $('#events').html(events.map(function (event, index) {
-        return '<li style="padding: 0 ' + 0 + 'px;"' +
+        return '<li style="padding: 0 10px;"' +
             '" class="event-name" data-index="' + index + '">' + event.name + '</li>'
     }));
     $('.event-name').click(function () {

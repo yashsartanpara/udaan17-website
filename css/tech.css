@@ -97,6 +97,7 @@ body {
     font-family: "Avengeance Heroic Avenger", sans-serif;
     font-size: 2rem;
     cursor: pointer;
+    padding: 0 10px;
 }
 
 .head-name {
