@@ -34,6 +34,7 @@
 .right-facing-font {
     padding-top: 10vh;
     left: 0;
+    font-family: 'avengers-fonts', sans-serif;
 }
 
 .nontech-events, .nights {
@@ -46,6 +47,7 @@
     right: 0;
     text-align: right;
     padding-top: 10vh;
+    font-family: 'avengers-fonts', sans-serif;
 }
 
 
@@ -70,10 +72,10 @@
 }
 
 .event-name {
-    line-height: 40px;
+    line-height: 2.5rem;
     list-style: none;
     color: white;
-    font-family: "Avengeance Heroic Avenger", sans-serif;
+    font-family: "avengers-fonts", sans-serif;
     font-size: 2rem;
     cursor: pointer;
 }

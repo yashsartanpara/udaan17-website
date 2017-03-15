@@ -62,18 +62,21 @@ body {
     padding-top: 10vh;
     right: 0;
     width: 100vw;
+    font-family: 'avengers-fonts', sans-serif;
 }
 
 .right-facing-font {
     padding-top: 10vh;
     left: 0;
     width: 100vw;
+    font-family: 'avengers-fonts', sans-serif;
 }
 
 .event-name {
+    line-height: 2.5rem;
     list-style: none;
     color: white;
-    font-family: "Avengeance Heroic Avenger", sans-serif;
+    font-family: "avengers-fonts", sans-serif;
     font-size: 2rem;
     cursor: pointer;
 }
@@ -94,7 +97,8 @@ body {
 
 .head-title {
     color: white;
-    font-family: "Avengeance Heroic Avenger", sans-serif;
+    line-height: 2.5rem;
+    font-family: "avengers-fonts", sans-serif;
     font-size: 2rem;
     cursor: pointer;
     padding: 0 10px;
