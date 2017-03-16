@@ -10,6 +10,27 @@ section {
 
 /* begin: title page */
 
+.next-page {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 48vh;
+    animation: scale 1s infinite;
+
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 .udaan-logo-container {
     position: absolute;
     height: 100vh;
@@ -191,9 +212,11 @@ a:link {
         width: 60%;
         margin: -15px auto;
     }
-    .tech-department-row-1 img{
+
+    .tech-department-row-1 img {
         margin: 15px auto;
     }
+
     .udaan-logo-container img {
         margin-top: 15vh;
         position: relative;
@@ -207,20 +230,24 @@ a:link {
         margin-bottom: 10vh;
     }
 
-    #schedule{
+    #schedule {
         padding-bottom: 10px;
     }
-    #video{
+
+    #video {
         padding-top: 10px;
     }
+
     #schedule, #video, .social-links {
         font-size: 1.5rem;
         width: 100vw;
     }
-    .tech-department-row-1{
+
+    .tech-department-row-1 {
         height: 45vh;
     }
-    .non-tech-department-row img{
+
+    .non-tech-department-row img {
         margin: -15px auto;
     }
 

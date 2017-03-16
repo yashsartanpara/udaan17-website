@@ -32,4 +32,7 @@ JQDoc.ready(function () {
         $(".main").moveUp();
     });
     //end: hammer swipe events
+    $('.next-page').click(function () {
+        $(".main").moveDown();
+    })
 });
