@@ -40,7 +40,7 @@
 .nontech-events, .nights {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
 }
 
 .left-facing-font {
@@ -108,5 +108,7 @@
     .left-facing {
         right: -100vw;
     }
-
+    #nights{
+        display: none;
+    }
 }
