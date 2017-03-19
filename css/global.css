@@ -23,11 +23,37 @@ body {
     margin: 0;
 }
 
-.coming-soon {
-    font-family: 'avengers-fonts', sans-serif;
+.cultural-nights {
+    font-family: 'description', 'Roboto', sans-serif;
     color: white;
-    font-size: 40px;
+    font-size: 2.5rem;
     padding-top: 30px;
+}
+
+.nights-content {
+    font-family: 'description', 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: white;
+}
+
+.nights-content span:nth-child(2) {
+    font-weight: bolder;
+    font-size: 2rem;
+    color: Red;
+}
+
+.nights-content span:nth-child(3) {
+    font-weight: bolder;
+    font-size: 2rem;
+    color: yellow;
+}
+
+.garba {
+    color: deeppink !important;
+}
+
+.kalrav {
+    color: cornflowerblue !important;
 }
 
 .city {
