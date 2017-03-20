@@ -59,15 +59,8 @@ a {
     color: white;
 }
 
-.address-pnone-email a {
-    text-decoration: none;
-    color: white;
-}
-
 @media (max-width: 780px) {
-    .address-pnone-email {
-        font-size: 2.3rem;
-    }
+
 }
 
 /*begin:developers*/
